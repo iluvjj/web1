@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport'
+	content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no'>
+<title>북트리</title>
+<link href='./css/join.css' rel='stylesheet' type='text/css' />
+<script src='http://code.jquery.com/jquery-3.1.1.js'></script>
+<script src='./js/scroll.js'></script>
+<script src='./js/join.js'></script>
+<script>
+	
+</script>
+</head>
+<body>
+	<header id="header">
+		<div class="wrap">
+			<h1 id="logo">
+				<a href="index.html"> <img src="./img/logo.svg" alt="로고" />
+				</a>
+			</h1>
+			<div class="tnb pc">
+				<ul>
+					<li><a href="login.html">로그인</a></li>
+					<li>|</li>
+					<li><a href="join01.html">회원가입</a></li>
+					<li>|</li>
+					<li><a href="mypage_oder.html">마이페이지</a></li>
+					<li>|</li>
+					<li><a href="#cart.html">장바구니</a></li>
+					<li>|</li>
+					<li><a href="mypage_oder.html">주문/배송관리</a></li>
+				</ul>
+			</div>
+			<nav class="gnb pc">
+				<ul class="gnb_1d">
+					<li><a href="list01.html" class="gnb_title">0~3세</a>
+						<ul class="gnb_2d">
+							<li><a href="list01.html">전체</a></li>
+							<li><a href="list02.html">그림책</a></li>
+							<li><a href="list03.html">놀이책</a></li>
+							<li><a href="list04.html">학습</a></li>
+							<li><a href="list05.html">전집</a></li>
+						</ul>
+					</li>
+					<li><a href="#"  class="gnb_title">4~7세</a>
+						<ul class="gnb_2d">
+							<li><a href="#47ageList01">전체</li>
+							<li><a href="#47ageList02">언어/창작</li>
+							<li><a href="#47ageList03">수리/과학</li>
+							<li><a href="#47ageList04">사회/역사</li>
+							<li><a href="#47ageList05">문화/예술</li>
+							<li><a href="#47ageList06">영어</li>
+							<li><a href="#47ageList07">누리과정</li>
+						</ul>
+					</li>
+					<li><a href="#" class="gnb_title">8~13세</a>
+						<ul class="gnb_2d">
+							<li><a href="#813ageList01">전체</a></li>
+							<li><a href="#813ageList02">언어/창작</a></li>
+							<li><a href="#813ageList03">수리/과학</a></li>
+							<li><a href="#813ageList04">사회/역사</a></li>
+							<li><a href="#813ageList05">문화/예술</a></li>
+							<li><a href="#813ageList06">백과/종합</a></li>
+							<li><a href="#813ageList07">영어</a></li>
+							<li><a href="#813ageList08">교과수록</a></li>
+							<li><a href="#813ageList09">학습만화</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="gnb_title">부모님서재</a>
+						<ul class="gnb_2d">
+							<li><a href="#parent01">임신/태교/출산</a></li>
+							<li><a href="#parent02">자녀육아</a>
+								<ul class="gnb_3d">
+									<li><a href="#parent201">1~3세</a></li>
+									<li><a href="#parent202">4~7세</a></li>
+									<li><a href="#parent203">8~13세</a></li>
+									<li><a href="#parent204">청소년</a></li>					
+								</ul>
+							</li>
+							<li><a href="#parent03">요리</a></li>
+							<li><a href="#parent04">자기개발서</a></li>
+						</ul>
+					</li>
+					<li><a href="going_event.html" class="gnb_title">이벤트</a>
+						<ul class="gnb_2d">
+							<li><a href="going_event.html">진행중인이벤트</a></li>
+							<li><a href="#none">종료된이벤트</a></li>
+						</ul>
+					</li>
+					<li><a href="book_brunch.html" class="gnb_title">기획전</a>
+						<ul class="gnb_2d">
+							<li><a href="book_brunch.html">북브런치</a></li>
+							<li><a href="book_collaboration.html">북콜라보</a></li>
+						</ul>
+					</li>
+					<li><a href="#교구티켓" class="gnb_title">교구/티켓</a>
+						<ul class="gnb_2d">
+							<li><a href="#교구">교구</a>
+								<ul class="gnb_3d">
+									<li><a href="#종류별">종류별</a></li>
+									<li><a href="#연령별">연령별</a></li>
+								</ul>
+							</li>
+							<li><a href="#티멧">티켓</a>
+								<ul class="gnb_3d">
+									<li><a href="#전시">전시</a></li>
+									<li><a href="#공연">공연</a></li>
+									<li><a href="#체험">체험</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="nonebox"></div>
+	
+<section>
+	<div class='wrap'>
+		<div class='tab_title'>
+			<div class='trace'>
+				<a href='index.html'>Home</a> &nbsp; > &nbsp;
+				<a href='join01.html'>회원가입</a>
+			</div><!--trace-->
+			<h4>회원가입</h4>
+		</div><!--tab_title-->
+		<div id='step_area'>
+			<ul class='c_after'>
+				<li>
+					<span class='circle '></span>
+					<h5>STEP01</h5>
+					<p>본인인증</p>
+				</li>
+				<li>
+					<span class='circle '></span>
+					<h5>STEP02</h5>
+					<p>이용약관동의</p>
+				</li>
+				<li>
+					<span class='circle '></span>
+					<h5>STEP03</h5>
+					<p>정보입력</p>
+				</li>
+				<li>
+					<span class='circle color_one'></span>
+					<h5>STEP04</h5>
+					<p>가입완료</p>
+				</li>
+			</ul>
+		</div><!-- #step_area -->
+		
+		<div class="stap4">
+			<h3>환영합니다.</h3>
+			<p>고객님의 회원가입을 진심으로 축하드립니다.</p>
+		</div>
+		<span class="btns_stpe4">
+			<a href="login.html" class="login_btn">로그인</a>
+			<a href="index.html" class="main_btn">메인으로</a>
+		</span>
+</div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<aside id='aside'>
+		<a href='#'></a>
+		<p>맨위로</p>
+	</aside>
+	<footer>
+		<div class='wrap'>
+		<ul class='footer_01'>
+			<li>
+				<h3>
+					<a href='#'>
+						<img src='./img/logo_f.svg' alt='하단로고'/>
+					</a>
+				</h3>
+			<li>
+				<address>
+					<p> 북트리 인천 서구 봉수대로 254 대표 : 홍길동</p>
+					<p> 사업자 등록번호 : 245-47-45987 </p>
+					<p> 대표전화 : 1544-1544(발신자 부담전화) 팩스:0501-234-1544(지역번호공통)</p>
+					<p>인천광역시 통신판매업신고번호 : 제 759호 &nbsp; ▶ <a href='#'> 사업자정보확인</a></p>
+					<span>COPYRIGHT(C) BOOKTREE ALL RIGHTS RESERVE.</span>
+				</address>
+			</li>
+		</ul>
+		<ul class='footer_02'>
+			<li class='sns'>
+				<a href='#'></a>
+				<a href='#'></a>
+				<a href='#'></a>
+			</li>
+			<li class='bnb'>	
+				<ul>
+					<li><a href='#'>회사소개</a></li>
+					<li>|</li>
+					<li><a href='#'>개인정보처리방침</a></li>
+					<li>|</li>
+					<li><a href='#'>이용안내</a></li>
+					<li>|</li>
+					<li><a href='#'>이용약관</a></li>
+				</ul>
+			</li>
+			<li class='ftc'>
+				<a href='#'><img src='./img/icon.png' alt='공정거래위원회'/></a>
+			</li>
+		</ul>
+		</div>
+	</footer>
+
+
+</body>
+</html>

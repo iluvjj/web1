@@ -1,0 +1,347 @@
+@charset "utf-8";
+@import url("reset.css");
+@import url("font.css");
+@import url("layout.css");
+@import url("slider.css");
+
+#sub_up>.wrap:after, #sh:after , .content:after, .subslide_box:after ,.slide_con_title:after{
+	display: block;
+	content: '';
+	clear: both;
+} 
+
+#sub_up {
+	width: 100%;
+	height: 150px;
+	overflow:hidden;
+}
+.tab_title {
+	width: 300px;height: 200px;
+	float:left;
+}
+.tab_title > h4 {
+	font-family:sc5;
+	font-size:2.2rem;
+	margin-top:90px;
+	text-align:right;
+}
+.tab>li:hover{
+	background-color: #005826;
+}
+.tab>li:hover a {
+	color:#fff;
+}
+.sc_frm {
+	padding: 14px 12px;
+	color: #313131;
+	width: calc(100% - 344px);
+	float:right;
+}
+.trace{
+	text-align:right;
+}
+
+#sh {
+	height: 40px;
+	width: 300px;
+	border-bottom:1px solid #ccc;
+	border-radius:0;
+	background: #ffffff;
+	margin-top:60px;
+	float:right;
+}
+#sh input {
+	font-size: 16px;
+	width: 220px;
+	padding: 10px;
+	border: 0;
+	border-radius:0;
+	outline: none;
+	float: left;
+}
+#sh button {
+	width: 40px;
+	height: 100%;
+	border: 0;
+	background: #fff;
+	outline: none;
+	float: right;
+	color: #fff;
+	cursor: pointer;
+	padding:0;
+}
+#sh button img {
+	height: 80%;
+}
+#sh_link {
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-left: 38px;
+	padding-top: 20px;
+}
+#list_tab {
+	height: 2300px;
+}
+
+#container {
+	margin: 0 auto;
+	position: relative;
+}
+#box, .tabcontent {
+	border-top: 1px solid #313131;
+}
+#box {
+	width: 300px;
+	margin-right: 10px;
+	padding: 14px 0;
+	text-align:center;
+}
+.tab {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+.tab li a {
+	display: inline-block;
+	color: #313131;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 17px;
+	transition: 0.3s;
+}
+.tabcontent {
+	display: none;
+	padding: 14px 12px;
+	color: #313131;
+	width: calc(100% - 348px);
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+ul.tab li.current {
+	background-color: #005826;
+}
+.tabcontent.current {
+	display: block;
+}
+.tab>.current>a {
+	color: #fff;
+	font-family: sc5
+}
+.sub_banner{
+	width:100%; height:320px;
+	margin:0 0 30px;
+	border-bottom:1px solid #321657;
+	box-sizing: border-box;
+}
+.slider {
+    width: 100%;
+    margin: 40px auto;
+}
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+   width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+   color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: 1;
+}
+    
+.slick-active {
+  opacity: 1;
+}
+
+.slick-current {
+  opacity: 1;
+}
+.slide_con img {
+	width:100%;
+}
+.slide_con p {
+	text-align:center;
+	padding:5px 0;
+	font-size:0.8rem;
+	border:1px solid #fff;
+	
+}
+.slide_con .slide_con_title{
+	font-family:sc4;
+	font-size:1rem;
+	text-overflow: ellipsis;
+	overflow:hidden;
+	height:auto; width:auto;
+	white-space: nowrap;
+	margin:0 auto;
+}
+.slide_con:hover img {
+	box-shadow:2px 2px 2px 2px grey;
+}
+.slide_con:hover .slide_con_title{
+	
+	text-shadow:2px 2px 2px 2px grey;
+}
+/**********************************/
+.list_pick{
+	width:calc((100%  -  135px)/4);
+	margin-left:45px;
+	float:left;
+}
+.mg_left{
+	margin-left:0;
+}
+/*그림을 넣어볼게요*/
+.list_pick:nth-child(1) .subimg_back{
+	background:url(../img/list/list01.jpg) no-repeat center/cover;
+	width:100%; height:300px;
+}
+.list_pick:nth-child(2) .subimg_back{
+	background:url(../img/list/list02.jpg) no-repeat center/cover;
+	width:100%; height:300px;
+}
+.list_pick:nth-child(3) .subimg_back{
+	background:url(../img/list/list03.jpg) no-repeat center/cover;
+	width:100%; height:300px;
+}
+.list_pick:nth-child(4) .subimg_back{
+	background:url(../img/list/list04.jpg) no-repeat center/cover;
+	width:100%; height:300px;
+}
+.list_pick:nth-child(5) .subimg_back{
+	background:url(../img/list/list05.jpg) no-repeat center/cover;
+	width:100%; height:300px;
+}
+.list_pick:nth-child(6) .subimg_back{
+	background:url(../img/list/list06.jpg) no-repeat center/cover;
+	width:100%; height:300px;
+}
+.list_pick:nth-child(7) .subimg_back{
+	background:url(../img/list/list07.jpg) no-repeat center/cover;
+	width:100%; height:300px;
+}
+.list_pick:nth-child(8) .subimg_back{
+	background:url(../img/list/list08.jpg) no-repeat center/cover;
+	width:100%; height:300px;
+}
+.list_pick:nth-child(9) .subimg_back{
+	background:url(../img/list/list09.jpg) no-repeat center/cover;
+	width:100%; height:300px;
+}
+.list_pick:nth-child(10) .subimg_back{
+	background:url(../img/list/list10.jpg) no-repeat center/cover;
+	width:100%; height:300px;
+}
+.list_pick:nth-child(11) .subimg_back{
+	background:url(../img/list/list11.jpg) no-repeat center/cover;
+	width:100%; height:300px;
+}
+.list_pick:nth-child(12) .subimg_back{
+	background:url(../img/list/list12.jpg) no-repeat center/cover;
+	width:100%; height:300px;
+}
+
+.sub_banner > h4 {
+	font-family:sc5;
+	font-size:1.4rem;
+	text-align:center;
+}
+
+.subimg_box{
+	position:relative;
+	overflow:hidden;
+	border:1px solid #f2f2f2;
+}
+.blind{
+   width:100%; height:0;
+   position:absolute;
+	background:rgba(0,0,0,0.0);
+    display:block;
+   text-align:center;
+}
+.subimg_box:hover .blind {
+	display:block;
+	background:rgba(0,0,0,0.6);
+	transition:0.7s;
+	height:50px; bottom:0px;
+}
+.b_like, .b_cart, .b_detail {
+   display:inline-block;
+   width:30%; height:50px;
+   color:#fff;
+   position:relative;
+}
+.b_like{
+	background:url(../img/icon01-02.png)no-repeat center;
+}
+.b_cart{
+	background:url(../img/icon01-01.png)no-repeat center;
+}
+
+.b_detail{
+	background:url(../img/icon01-03.png)no-repeat center;
+}
+
+
+
+.star_score{
+	width:85px;
+	height:16px;
+	margin:10px 0;
+	background:url(../img/ico_star.png);
+}
+.subimg_title{
+	font-family:sc5;
+}
+.subimg_price{
+	text-align:right;
+	padding:20px 0 80px;
+}
+.subimg_margin{
+	color:#ea2d07;
+	font-family:sc4;
+	padding: 0 5px;
+}
+.si_pirce {
+	font-family:sc5;
+	font-size:1.2rem;
+}
+
+.pagination {
+	padding-top:100px;
+	text-align:center;
+}
+.pagination a {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	line-height: 40px;
+}
+a.page_next, a.page_prv {
+	border: 1px solid #313131;
+	background: #eee;
+}
+.pagination a:hover {
+	background: #005826;
+	color: #fff;
+}
+.pagination a:hover ,a.numsel {
+	background: #005826;
+	color: #fff;
+}
+

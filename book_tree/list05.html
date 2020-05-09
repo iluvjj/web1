@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>북트리</title>
+<link href="./css/sub01.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/scroll.js"></script>
+<script src="./js/sub_tap.js"></script>
+<script>
+	
+</script>
+</head>
+<body>
+	<header id="header">
+		<div class="wrap">
+			<h1 id="logo">
+				<a href="index.html"> <img src="./img/logo.svg" alt="로고" />
+				</a>
+			</h1>
+			<div class="tnb pc">
+				<ul>
+					<li><a href="login.html">로그인</a></li>
+					<li>|</li>
+					<li><a href="join01.html">회원가입</a></li>
+					<li>|</li>
+					<li><a href="mypage_oder.html">마이페이지</a></li>
+					<li>|</li>
+					<li><a href="#cart.html">장바구니</a></li>
+					<li>|</li>
+					<li><a href="mypage_oder.html">주문/배송관리</a></li>
+				</ul>
+			</div>
+			<nav class="gnb pc">
+				<ul class="gnb_1d">
+					<li><a href="list01.html" class="gnb_title">0~3세</a>
+						<ul class="gnb_2d">
+							<li><a href="list01.html">전체</a></li>
+							<li><a href="list02.html">그림책</a></li>
+							<li><a href="list03.html">놀이책</a></li>
+							<li><a href="list04.html">학습</a></li>
+							<li><a href="list05.html">전집</a></li>
+						</ul>
+					</li>
+					<li><a href="#"  class="gnb_title">4~7세</a>
+						<ul class="gnb_2d">
+							<li><a href="#47ageList01">전체</li>
+							<li><a href="#47ageList02">언어/창작</li>
+							<li><a href="#47ageList03">수리/과학</li>
+							<li><a href="#47ageList04">사회/역사</li>
+							<li><a href="#47ageList05">문화/예술</li>
+							<li><a href="#47ageList06">영어</li>
+							<li><a href="#47ageList07">누리과정</li>
+						</ul>
+					</li>
+					<li><a href="#" class="gnb_title">8~13세</a>
+						<ul class="gnb_2d">
+							<li><a href="#813ageList01">전체</a></li>
+							<li><a href="#813ageList02">언어/창작</a></li>
+							<li><a href="#813ageList03">수리/과학</a></li>
+							<li><a href="#813ageList04">사회/역사</a></li>
+							<li><a href="#813ageList05">문화/예술</a></li>
+							<li><a href="#813ageList06">백과/종합</a></li>
+							<li><a href="#813ageList07">영어</a></li>
+							<li><a href="#813ageList08">교과수록</a></li>
+							<li><a href="#813ageList09">학습만화</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="gnb_title">부모님서재</a>
+						<ul class="gnb_2d">
+							<li><a href="#parent01">임신/태교/출산</a></li>
+							<li><a href="#parent02">자녀육아</a>
+								<ul class="gnb_3d">
+									<li><a href="#parent201">1~3세</a></li>
+									<li><a href="#parent202">4~7세</a></li>
+									<li><a href="#parent203">8~13세</a></li>
+									<li><a href="#parent204">청소년</a></li>					
+								</ul>
+							</li>
+							<li><a href="#parent03">요리</a></li>
+							<li><a href="#parent04">자기개발서</a></li>
+						</ul>
+					</li>
+					<li><a href="going_event.html" class="gnb_title">이벤트</a>
+						<ul class="gnb_2d">
+							<li><a href="going_event.html">진행중인이벤트</a></li>
+							<li><a href="#none">종료된이벤트</a></li>
+						</ul>
+					</li>
+					<li><a href="book_brunch.html" class="gnb_title">기획전</a>
+						<ul class="gnb_2d">
+							<li><a href="book_brunch.html">북브런치</a></li>
+							<li><a href="book_collaboration.html">북콜라보</a></li>
+						</ul>
+					</li>
+					<li><a href="#교구티켓" class="gnb_title">교구/티켓</a>
+						<ul class="gnb_2d">
+							<li><a href="#교구">교구</a>
+								<ul class="gnb_3d">
+									<li><a href="#종류별">종류별</a></li>
+									<li><a href="#연령별">연령별</a></li>
+								</ul>
+							</li>
+							<li><a href="#티멧">티켓</a>
+								<ul class="gnb_3d">
+									<li><a href="#전시">전시</a></li>
+									<li><a href="#공연">공연</a></li>
+									<li><a href="#체험">체험</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="nonebox"></div>
+	<section id="sub_up">
+		<div class="wrap">
+			<div class="tab_title">
+				<h4>0~3세</h4>
+			</div><!-- tab_title -->
+			<div class="sc_frm">
+				<div class="trace">
+					<a href="index.html">Home</a> &nbsp;> &nbsp;
+					<a href="list01.html">0~3세</a>
+				</div><!--.trace -->
+				<div id="search">		
+					<div id="sh">
+						<input type="text" placeholder="검색어 입력"/>
+						<button><img src="./img/sh.jpg"></button>
+					</div><!--#sh -->
+				</div><!--.search -->
+			</div><!--sc_frm -->
+		</div><!-- .wrap -->
+	</section><!-- #sub_up_end -->
+	<section id="list_tab">
+	<div id="container" class="wrap">
+		<div id="box">
+			<ul class="tab">
+				<li><a href="list01.html">전체</a></li>
+				<li ><a href="list02.html">그림책</a></li>
+				<li ><a href="list03.html">놀이책</a></li>
+				<li ><a href="list04.html">학습</a></li>
+				<li class="current" ><a href="list05.html">전집</a></li>
+			</ul><!-- .tab_end -->
+		</div><!-- #box_end -->
+		<div id="tab1" class="tabcontent current">
+			<div class="sub_banner">
+				<h4>이달의 추천</h4>
+				<div class="regular slider">
+					<div class="slide_con ">
+						<a href="detail.html ">
+							<img src="./img/list/subimg01.jpg" alt="LONDON"/>
+							<p class="slide_con_title">London 런던</p>
+							<p>웅진씽크빅</p>
+							<div class="blind"></div>
+						</a>
+					</div>
+					<div class="slide_con ">
+						<a href="detail.html ">
+							<img src="./img/list/subimg02.jpg" alt="내가정말?"/>
+							<p class="slide_con_title">내가정말?</p>
+							<p>웅진씽크빅</p>
+							<div class="blind"></div>
+						</a>
+					</div>
+					<div class="slide_con ">
+						<a href="detail.html ">
+							<img src="./img/list/subimg03.jpg" alt="LONDON"/>
+							<p class="slide_con_title">안아줘!</p>
+							<p>웅진씽크빅</p>
+							<div class="blind"></div>
+						</a>
+					</div>
+					<div class="slide_con ">
+						<a href="detail.html ">
+							<img src="./img/list/subimg04.jpg" alt="FLORA AND THE FLAMINGO"/>
+							<p class="slide_con_title"> FLORA AND THE FLAMINGO</p>
+							<p>웅진씽크빅</p>
+							<div class="blind"></div>
+						</a>
+					</div>
+					<div class="slide_con ">
+						<a href="#none">
+							<img src="./img/list/subimg05.jpg" alt="너도 사랑스러워"/>
+							<p class="slide_con_title">너도 사랑스러워</p>
+							<p>웅진씽크빅</p>
+							<div class="blind"></div>
+						</a>
+					</div>
+					  <div class="slide_con ">
+						<a href="detail.html ">
+							<img src="./img/list/subimg03.jpg" alt="LONDON"/>
+							<p class="slide_con_title">안아줘!</p>
+							<p>웅진씽크빅</p>
+							<div class="blind"></div>
+						</a>
+					</div>
+				</div	>
+			</div><!-- .sub_banner_end -->
+			<div class="content">
+				<div class="list_pick mg_left">
+					<div class="subimg_box">
+						<div class="subimg_back">
+						</div><!--.subimg_back -->					 
+						<div class="blind">
+							<a href="#" class="b_like"></a>
+							<a href="#" class="b_cart"> </a>
+							<a href="#" class="b_detail"> </a>
+						</div><!--.blind_end -->
+					</div><!-- .subimg_box_end -->
+					<div class="star_score">
+					<!-- 별  png 백그라운드 처리예정 -->
+					</div><!-- star_score_end -->
+					<p class="subimg_title">
+						키득키득 사운드북<br/>동물오케스트라
+					</p><!--.subimg_title_end-->
+					<p class="subimg_price">
+						<span class="subimg_margin">[10%할인]</span>
+						<span class="si_pirce">12,420원</span>
+					</p>
+				</div><!-- list_pick_end -->
+				<div class="list_pick">
+					<div class="subimg_box">
+						<div class="subimg_back">
+						</div><!--.subimg_back -->	
+						<div class="blind">
+							<a href="#" class="b_like"> </a>
+							<a href="#" class="b_cart"> </a>
+							<a href="#" class="b_detail"> </a>
+						</div><!--.blind_end -->
+					</div><!-- .subimg_box_end -->
+					<div class="star_score">
+					<!-- 별  png 백그라운드 처리예정 -->
+					</div><!-- star_score_end -->
+					<p class="subimg_title">
+						키득키득 사운드북<br/>동물오케스트라
+					</p><!--.subimg_title_end-->
+					<p class="subimg_price">
+						<span class="subimg_margin">[10%할인]</span>
+						<span class="si_pirce">12,420원</span>
+					</p>
+				</div><!-- list_pick_end -->
+				<div class="list_pick">
+					<div class="subimg_box">
+						<div class="subimg_back">
+						</div><!--.subimg_back -->
+						<div class="blind">
+							<a href="#" class="b_like"> </a>
+							<a href="#" class="b_cart"> </a>
+							<a href="#" class="b_detail"> </a>
+						</div><!--.blind_end -->
+					</div><!-- .subimg_box_end -->
+					<div class="star_score">
+					<!-- 별  png 백그라운드 처리예정 -->
+					</div><!-- star_score_end -->
+					<p class="subimg_title">
+						키득키득 사운드북<br/>동물오케스트라
+					</p><!--.subimg_title_end-->
+					<p class="subimg_price">
+						<span class="subimg_margin">[10%할인]</span>
+						<span class="si_pirce">12,420원</span>
+					</p>
+				</div><!-- list_pick_end -->
+				<div class="list_pick">
+					<div class="subimg_box">
+						<div class="subimg_back">
+						</div><!--.subimg_back -->	
+						<div class="blind">
+							<a href="#" class="b_like"> </a>
+							<a href="#" class="b_cart"> </a>
+							<a href="#" class="b_detail"> </a>
+						</div><!--.blind_end -->
+					</div><!-- .subimg_box_end -->
+					<div class="star_score">
+					<!-- 별  png 백그라운드 처리예정 -->
+					</div><!-- star_score_end -->
+					<p class="subimg_title">
+						키득키득 사운드북<br/>동물오케스트라
+					</p><!--.subimg_title_end-->
+					<p class="subimg_price">
+						<span class="subimg_margin">[10%할인]</span>
+						<span class="si_pirce">12,420원</span>
+					</p>
+				</div><!-- list_pick_end -->
+				<div class="list_pick mg_left">
+					<div class="subimg_box">
+						<div class="subimg_back">
+						</div><!--.subimg_back -->	
+						<div class="blind">
+							<a href="#" class="b_like"> </a>
+							<a href="#" class="b_cart"> </a>
+							<a href="#" class="b_detail"> </a>
+						</div><!--.blind_end -->
+					</div><!-- .subimg_box_end -->
+					<div class="star_score">
+					<!-- 별  png 백그라운드 처리예정 -->
+					</div><!-- star_score_end -->
+					<p class="subimg_title">
+						키득키득 사운드북<br/>동물오케스트라
+					</p><!--.subimg_title_end-->
+					<p class="subimg_price">
+						<span class="subimg_margin">[10%할인]</span>
+						<span class="si_pirce">12,420원</span>
+					</p>
+				</div><!-- list_pick_end -->
+				<div class="list_pick">
+					<div class="subimg_box">
+						<div class="subimg_back">
+						</div><!--.subimg_back -->	
+						<div class="blind">
+							<a href="#" class="b_like"> </a>
+							<a href="#" class="b_cart"> </a>
+							<a href="#" class="b_detail"> </a>
+						</div><!--.blind_end -->
+					</div><!-- .subimg_box_end -->
+					<div class="star_score">
+					<!-- 별  png 백그라운드 처리예정 -->
+					</div><!-- star_score_end -->
+					<p class="subimg_title">
+						키득키득 사운드북<br/>동물오케스트라
+					</p><!--.subimg_title_end-->
+					<p class="subimg_price">
+						<span class="subimg_margin">[10%할인]</span>
+						<span class="si_pirce">12,420원</span>
+					</p>
+				</div><!-- list_pick_end -->
+				<div class="list_pick">
+					<div class="subimg_box">
+						<div class="subimg_back">
+						</div><!--.subimg_back -->	
+						<div class="blind">
+							<a href="#" class="b_like"> </a>
+							<a href="#" class="b_cart"> </a>
+							<a href="#" class="b_detail"> </a>
+						</div><!--.blind_end -->
+					</div><!-- .subimg_box_end -->
+					<div class="star_score">
+					<!-- 별  png 백그라운드 처리예정 -->
+					</div><!-- star_score_end -->
+					<p class="subimg_title">
+						키득키득 사운드북<br/>동물오케스트라
+					</p><!--.subimg_title_end-->
+					<p class="subimg_price">
+						<span class="subimg_margin">[10%할인]</span>
+						<span class="si_pirce">12,420원</span>
+					</p>
+				</div><!-- list_pick_end -->
+				<div class="list_pick">
+					<div class="subimg_box">
+						<div class="subimg_back">
+						</div><!--.subimg_back -->	
+						<div class="blind">
+							<a href="#" class="b_like"> </a>
+							<a href="#" class="b_cart"> </a>
+							<a href="#" class="b_detail"> </a>
+						</div><!--.blind_end -->
+					</div><!-- .subimg_box_end -->
+					<div class="star_score">
+					<!-- 별  png 백그라운드 처리예정 -->
+					</div><!-- star_score_end -->
+					<p class="subimg_title">
+						키득키득 사운드북<br/>동물오케스트라
+					</p><!--.subimg_title_end-->
+					<p class="subimg_price">
+						<span class="subimg_margin">[10%할인]</span>
+						<span class="si_pirce">12,420원</span>
+					</p>
+				</div><!-- list_pick_end -->
+				<div class="list_pick mg_left">
+					<div class="subimg_box">
+						<div class="subimg_back">
+						</div><!--.subimg_back -->	
+						<div class="blind">
+							<a href="#" class="b_like"> </a>
+							<a href="#" class="b_cart"> </a>
+							<a href="#" class="b_detail"> </a>
+						</div><!--.blind_end -->
+					</div><!-- .subimg_box_end -->
+					<div class="star_score">
+					<!-- 별  png 백그라운드 처리예정 -->
+					</div><!-- star_score_end -->
+					<p class="subimg_title">
+						키득키득 사운드북<br/>동물오케스트라
+					</p><!--.subimg_title_end-->
+					<p class="subimg_price">
+						<span class="subimg_margin">[10%할인]</span>
+						<span class="si_pirce">12,420원</span>
+					</p>
+				</div><!-- list_pick_end -->
+				<div class="list_pick">
+					<div class="subimg_box">
+						<div class="subimg_back">
+						</div><!--.subimg_back -->	
+						<div class="blind">
+							<a href="#" class="b_like"> </a>
+							<a href="#" class="b_cart"> </a>
+							<a href="#" class="b_detail"> </a>
+						</div><!--.blind_end -->
+					</div><!-- .subimg_box_end -->
+					<div class="star_score">
+					<!-- 별  png 백그라운드 처리예정 -->
+					</div><!-- star_score_end -->
+					<p class="subimg_title">
+						키득키득 사운드북<br/>동물오케스트라
+					</p><!--.subimg_title_end-->
+					<p class="subimg_price">
+						<span class="subimg_margin">[10%할인]</span>
+						<span class="si_pirce">12,420원</span>
+					</p>
+				</div><!-- list_pick_end -->
+				<div class="list_pick">
+					<div class="subimg_box">
+						<div class="subimg_back">
+						</div><!--.subimg_back -->	
+						<div class="blind">
+							<a href="#" class="b_like"> </a>
+							<a href="#" class="b_cart"> </a>
+							<a href="#" class="b_detail"> </a>
+						</div><!--.blind_end -->
+					</div><!-- .subimg_box_end -->
+					<div class="star_score">
+					<!-- 별  png 백그라운드 처리예정 -->
+					</div><!-- star_score_end -->
+					<p class="subimg_title">
+						키득키득 사운드북<br/>동물오케스트라
+					</p><!--.subimg_title_end-->
+					<p class="subimg_price">
+						<span class="subimg_margin">[10%할인]</span>
+						<span class="si_pirce">12,420원</span>
+					</p>
+				</div><!-- list_pick_end -->
+				<div class="list_pick">
+					<div class="subimg_box">
+						<div class="subimg_back">
+						</div><!--.subimg_back -->	
+						<div class="blind">
+							<a href="#" class="b_like"> </a>
+							<a href="#" class="b_cart"> </a>
+							<a href="#" class="b_detail"> </a>
+						</div><!--.blind_end -->
+					</div><!-- .subimg_box_end -->
+					<div class="star_score">
+					<!-- 별  png 백그라운드 처리예정 -->
+					</div><!-- star_score_end -->
+					<p class="subimg_title">
+						키득키득 사운드북<br/>동물오케스트라
+					</p><!--.subimg_title_end-->
+					<p class="subimg_price">
+						<span class="subimg_margin">[10%할인]</span>
+						<span class="si_pirce">12,420원</span>
+					</p>
+				</div><!-- list_pick_end -->
+			</div><!-- .content_end -->
+				<div class="pagination">
+					<a href="#none" class="page_prv"> ◁ </a>
+					<a href="#none" class="numsel">1</a>
+					<a href="#none">2</a>
+					<a href="#none">3</a>
+					<a href="#none">4</a>
+					<a href="#none">5</a>
+					<a href="#none" class="page_next">▷</a>
+				</div>
+		</div>	<!-- #tab,.tabcontent current_end -->
+	</div><!-- #container_end -->
+	</section>
+	
+	
+	
+		<aside id="aside">
+		<a href="#"></a>
+		<p>맨위로</p>
+	</aside>
+	<footer>
+		<div class="wrap">
+		<ul class="footer_01">
+			<li>
+				<h3>
+					<a href="#">
+						<img src="./img/logo_f.svg" alt="하단로고"/>
+					</a>
+				</h3>
+			<li>
+				<address>
+					<p> 북트리 인천 서구 봉수대로 254 대표 : 홍길동</p>
+					<p> 사업자 등록번호 : 245-47-45987 </p>
+					<p> 대표전화 : 1544-1544(발신자 부담전화) 팩스:0501-234-1544(지역번호공통)</p>
+					<p>인천광역시 통신판매업신고번호 : 제 759호 &nbsp; ▶ <a href="#"> 사업자정보확인</a></p>
+					<span>COPYRIGHT(C) BOOKTREE ALL RIGHTS RESERVE.</span>
+				</address>
+			</li>
+		</ul>
+		<ul class="footer_02">
+			<li class="sns">
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</li>
+			<li class="bnb">	
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li>|</li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li>|</li>
+					<li><a href="#">이용안내</a></li>
+					<li>|</li>
+					<li><a href="#">이용약관</a></li>
+				</ul>
+			</li>
+			<li class="ftc">
+				<a href="#"><img src="./img/icon.png" alt="공정거래위원회"/></a>
+			</li>
+		</ul>
+		</div>
+	</footer>
+	
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+   $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 2
+      });
+	  
+ </script>
+</body>
+</html>

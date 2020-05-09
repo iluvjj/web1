@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>북트리</title>
+<link href="./css/detail.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
+<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/slick_full_slider.js"></script>
+<script src="./js/scroll.js"></script>
+<script src="./js/check.js"></script>
+<script src="./js/sub_tap.js"></script>
+<script src="./js/pay.js"></script>
+<script>
+	
+</script>
+</head>
+<body>
+	<header id="header">
+		<div class="wrap">
+			<h1 id="logo">
+				<a href="index.html"> <img src="./img/logo.svg" alt="로고" />
+				</a>
+			</h1>
+			<div class="tnb pc">
+				<ul>
+					<li><a href="login.html">로그인</a></li>
+					<li>|</li>
+					<li><a href="join01.html">회원가입</a></li>
+					<li>|</li>
+					<li><a href="mypage_oder.html">마이페이지</a></li>
+					<li>|</li>
+					<li><a href="#cart.html">장바구니</a></li>
+					<li>|</li>
+					<li><a href="mypage_oder.html">주문/배송관리</a></li>
+				</ul>
+			</div>
+			<nav class="gnb pc">
+				<ul class="gnb_1d">
+					<li><a href="list01.html" class="gnb_title">0~3세</a>
+						<ul class="gnb_2d">
+							<li><a href="list01.html">전체</a></li>
+							<li><a href="list02.html">그림책</a></li>
+							<li><a href="list03.html">놀이책</a></li>
+							<li><a href="list04.html">학습</a></li>
+							<li><a href="list05.html">전집</a></li>
+						</ul>
+					</li>
+					<li><a href="#"  class="gnb_title">4~7세</a>
+						<ul class="gnb_2d">
+							<li><a href="#47ageList01">전체</li>
+							<li><a href="#47ageList02">언어/창작</li>
+							<li><a href="#47ageList03">수리/과학</li>
+							<li><a href="#47ageList04">사회/역사</li>
+							<li><a href="#47ageList05">문화/예술</li>
+							<li><a href="#47ageList06">영어</li>
+							<li><a href="#47ageList07">누리과정</li>
+						</ul>
+					</li>
+					<li><a href="#" class="gnb_title">8~13세</a>
+						<ul class="gnb_2d">
+							<li><a href="#813ageList01">전체</a></li>
+							<li><a href="#813ageList02">언어/창작</a></li>
+							<li><a href="#813ageList03">수리/과학</a></li>
+							<li><a href="#813ageList04">사회/역사</a></li>
+							<li><a href="#813ageList05">문화/예술</a></li>
+							<li><a href="#813ageList06">백과/종합</a></li>
+							<li><a href="#813ageList07">영어</a></li>
+							<li><a href="#813ageList08">교과수록</a></li>
+							<li><a href="#813ageList09">학습만화</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="gnb_title">부모님서재</a>
+						<ul class="gnb_2d">
+							<li><a href="#parent01">임신/태교/출산</a></li>
+							<li><a href="#parent02">자녀육아</a>
+								<ul class="gnb_3d">
+									<li><a href="#parent201">1~3세</a></li>
+									<li><a href="#parent202">4~7세</a></li>
+									<li><a href="#parent203">8~13세</a></li>
+									<li><a href="#parent204">청소년</a></li>					
+								</ul>
+							</li>
+							<li><a href="#parent03">요리</a></li>
+							<li><a href="#parent04">자기개발서</a></li>
+						</ul>
+					</li>
+					<li><a href="going_event.html" class="gnb_title">이벤트</a>
+						<ul class="gnb_2d">
+							<li><a href="going_event.html">진행중인이벤트</a></li>
+							<li><a href="#none">종료된이벤트</a></li>
+						</ul>
+					</li>
+					<li><a href="book_brunch.html" class="gnb_title">기획전</a>
+						<ul class="gnb_2d">
+							<li><a href="book_brunch.html">북브런치</a></li>
+							<li><a href="book_collaboration.html">북콜라보</a></li>
+						</ul>
+					</li>
+					<li><a href="#교구티켓" class="gnb_title">교구/티켓</a>
+						<ul class="gnb_2d">
+							<li><a href="#교구">교구</a>
+								<ul class="gnb_3d">
+									<li><a href="#종류별">종류별</a></li>
+									<li><a href="#연령별">연령별</a></li>
+								</ul>
+							</li>
+							<li><a href="#티멧">티켓</a>
+								<ul class="gnb_3d">
+									<li><a href="#전시">전시</a></li>
+									<li><a href="#공연">공연</a></li>
+									<li><a href="#체험">체험</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="nonebox"></div>
+	<!--컨텐츠 영역-->
+	<section id="detail">
+		<div class="wrap">
+		<div class="tab_title">
+			<div class="trace">
+				<a href="index.html">Home</a> &nbsp; > &nbsp;
+				<a href="detail.html">상세보기</a>
+			</div><!--trace-->
+			<h4>베이비쭈 아기동물송</h4>
+			<p>우리아기 오감발달 동물원 사운드북</p>
+			<span>
+				<p>샘 태플린 글, 페데리카 아이오사 그림 </p>
+				<p>스마트 베어 </p>
+			</span>
+		</div><!--tab_title-->
+		<div id="proudct">
+		<!--너는 좌청룡-->
+			<div class="proudct priudct_img">
+				<div>
+				<img src="./img/list/list01.jpg" alt="베이비쭈아리동물송">
+				</div>
+				<p>공유하기</p>
+				<ul class="proudct_sns">
+					<li><a href="#" class="h_sns sns_ins"></a></li>
+					<li><a href="https://www.facebook.com/login" target="blink" class="h_sns sns_fb"></a></li>
+					<li><a href="#" class="h_sns sns_bl"></a></li>
+					<li><a href="#" class="h_sns sns_link" onclick="bt_link()"></a></li>
+				</ul>
+
+			</div><!--좌청룡은 여기까지인가.priudct_img-->
+			<!--너는 우백호-->
+			<div class="proudct priudct_info">
+				<div>
+					<!-- 정가 -->
+					<ul>
+						<li class="proudct_th">
+							<p>정가</p>
+						</li>
+						<li class="proudct_td">
+							<i class="price">15000</i><i>원</i>
+						</li>
+					</ul>
+					<!-- 판매가 -->
+					<ul>
+						<li class="proudct_th">
+							<p>판매가</p>
+						</li>
+						<li class="proudct_td">
+						<p class="red_text">[<i class="seller">10</i>% 할인]</p>
+							<i class="sellAfter"></i><i>원</i>
+							
+						</li>
+					</ul>
+					<!-- 배송비 -->
+					<ul>
+						<li class="proudct_th">
+							<p>배송비</p>
+						</li>
+						<li class="proudct_td">
+							<p>무료</p>
+						</li>
+					</ul>
+					<!-- 배송정보 -->
+					<ul>
+						<li class="proudct_th">
+							<p>배송정보</p>
+						</li>
+						<li class="proudct_td">
+							<p>CJ택배</p>
+						</li>
+					</ul>
+					<!-- 주문수량 -->
+					<ul>
+						<li class="proudct_th">
+							<p>주문수량</p>
+						</li>
+						<li class="proudct_td">
+							<span>
+								<input type="button" class="number_min" value="－"/>
+								<input type="text" value="1" id="numbersell" />
+								<input type="button" class="number_max"  value="＋"/>
+							</span>
+						</li>
+					</ul>
+					<!-- 구매금액 -->
+					<ul>
+						<li class="proudct_th">
+							<p>구매금액</p>
+						</li>
+						<li class="proudct_td">
+							<i class="all_pay">0</i><i>원</i>
+						</li>
+					</ul>
+				
+				</div>
+				<div class="btns_LCB">
+					<input type="button" class="btns_buy" onclick="btns_buy()" value="구매하기"/>
+					<input type="button" class="btns_cart" onclick="btns_cart()" value="장바구니"/>
+					<input type="button" class="btns_like" onclick="btns_like()" value="찜하기"/>
+				</div>
+			</div><!--priudct_info-->
+		</div><!--#proudct-->
+		<div class="slider_AD">		
+			<div class="slick-items">
+				<div>이벤트1</div>
+				<div>이벤트2</div>
+				<div>이벤트3</div>
+				<div>이벤트4</div>
+				<div>이벤트5</div>
+			</div>
+		</div>
+		<div class="tab_detail_meun">
+			
+		<div class="line ">
+			<ul  id="tab_detail_product">
+				<li >
+					<a href="#tab_detail_product" class="detail_a btn_click">
+						상품설명
+					</a>
+				</li>
+				<li>
+					<a href="#tab_detail_review" class="detail_a">
+						상품리뷰
+					</a>
+				</li>
+				<li>
+					<a href="#tab_detail_qa" class="detail_a">
+						상품Q&amp;A
+					</a>
+				</li>
+				<li>
+					<a href="#tab_detail_infos" class="detail_a">
+						판매정보
+					</a>
+				</li>
+			</ul>
+		
+			<h4>상품설명</h4>
+			
+			<p>뇌발달에 결정적인 시기는 유아기!!
+				뇌의 뉴런이 폭발적으로 발달하는 시기는 유아기로 이 시기에 각종 오감 놀이 등을 통해 뇌 발달이 활발하게 형성됩니다. 따라서 
+				유아시기에 어떤 활동 등을 통해 어떤 자극과 경험을 하였는지가 아이들의 인지발달과 인성발달의 기준이 됩니다.
+				따라서 다양한 놀이와 경험은 직접적인 학습보다 더 중요합니다. 즉, 아이들에게는 노는 것이 곧 공부입니다.
+				우리 아이 두뇌를 똑똑하게 만드는 신나는 놀이 활동북!!
+				미로대탐험 시리즈는 우리 아이들의 신나게 놀이를 하면서 효과적인 두뇌계발 활동을 도와주는 놀이활동북입니다. 
+				미로 게임, 숫자 게임, 스티커 퍼즐 게임, 다른 그림 찾기 게임 총 4개의 게임으로 구성되어 아이들이 다양한 놀이를 통해 
+				두뇌발달을 위한 활동을 할 수 있습니다.</p>
+				<br/>
+				<p class="strong">놀이 하나 - 미로 게임</p>
+				<p>
+				미로를 찾다 보면 어느새 미로 속으로 빨려 들어가 길을 걷고 있는 듯한 느낌이 들 거예요.
+				빠른 두뇌 회전과 뛰어난 관찰력이 필요한 미로 찾기!
+				어느새 아이들이 집중력이 쑥쑥 커가는 것을 알 수 있을 거예요.
+				</p>
+				
+				<p class="strong">놀이 둘 - 숫자 게임</p>
+				<p>
+				요리조리 살피고, 하나하나 세어보고, 꼼꼼하게 계산하면 질문의 답이 짜잔!
+				미로 속에 숨어 있는 작은 사물을 찾아서 답을 찾다보면 관찰력과 연산력이 저절로 향상될 거예요.
+				</p>
+				<br/>
+				<p class="strong">놀이 셋 - 스티커 퍼즐 게임</p>
+				<p>
+				4조각의 스티커 퍼즐을 어떻게 맞추면 그림이 완성될까요?
+				이리저리 끼워 맞추다 보면 성취감과 자신감이 어느새 짠! 그리고 하나의 그림이 완성.
+				망설이지 말고 도전해 보세요!
+				</p>
+				<br/>
+				<p class="strong">놀이 넷 - 다른 그림 찾기 게임</p>	
+				<p>
+				나는야 꼬마 탐정, 하나도 놓치지 않고 다 찾고 말 거야.
+				두 그림을 집중을 하여 꼼꼼히 보다 보면 사고력과 관찰력이 향상이 될 거예요.
+				그림 속으로 즐거움을 찾아 떠나 볼까요?
+				</p>
+				<h5>상세이미지</h5>
+				<img src="./img/detail/animalsong.jpg" alt="베이비쭈 아기동물쏭 상세페이지"/>
+				<h5>상품정보</h5>
+				<div class="book_info">
+					<div class="bi_line">
+						<span>출간일</span>
+						<span>2019년 8월 15일</span>
+					</div>
+					<div class="bi_line">
+						<span>쪽수, 무게, 크기</span>
+						<span>1쪽 , 238g , 288*195*15mm</span>
+					</div>
+					<div class="bi_line">
+						<span>ISBN13</span>
+						<span>8809477871517</span>
+					</div>
+					<div class="bi_line">
+						<span>ISBN10</span>
+						<span>9477871516</span>
+					</div>
+					<div class="bi_line">
+						<span>KC인증</span>
+						<span>안전확인/Cb064r400-8007</spans>
+					</div>
+				</div>
+		</div>
+		
+		<div class="line">
+			<ul  id="tab_detail_review" >
+				<li >
+					<a href="#tab_detail_product">
+						상품설명
+					</a>
+				</li>
+				<li>
+					<a href="#tab_detail_review" class=" btn_click">
+						상품리뷰
+					</a>
+				</li>
+				<li>
+					<a href="#tab_detail_qa" >
+						상품Q&amp;A
+					</a>
+				</li>
+				<li>
+					<a href="#tab_detail_infos" >
+						판매정보
+					</a>
+				</li>
+			</ul>
+			<h4>상품리뷰</h4>
+			<div class="star_box">
+				<h5>총점</h5>
+				<div class="star_area">
+					<div class="star_color star_color8"></div>
+					<img src="./img/detail/star.png" alt="star"/>
+				</div>
+				<ul class="detail_stars">
+					<li>
+						<span><p>내용</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color7"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</li>
+					<li>
+						<span><p>디자인</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color8"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</li>
+					<li>
+						<span><p>가격</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color9"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</li>
+				</ul>
+			
+			</div>
+			<span class="review_write">
+				<a href="#none" class="review_write_btn">상품리뷰작성</a>
+			</span>
+			<!--상품리뷰작성을 눌러야 튀어나오는 놈 -->
+			<div class="review_blind_text_box">
+				<h3>이 책을 평가해주세요</h3>
+				<div class="stars_after">
+					<div class="stars_text stars_float ">
+						<p>내용</p>
+					</div>
+					<div class="stars_select stars_float"><!--누르면 별점이 체크된다요-->
+						<span class="stars_picker picker01"></span><span class="stars_picker picker02"></span><span class="stars_picker picker03"></span><span class="stars_picker picker04"></span><span class="stars_picker picker05"></span>
+						<div class="bg_star">
+						</div>
+					</div><!--누르면 별점이 체크된다요-->
+				</div>
+				<div class="stars_after">
+					<div class="stars_text stars_float ">
+						<p>디자인</p>
+					</div>
+					<div class="stars_select stars_float"><!--누르면 별점이 체크된다요-->
+						<span class="stars_picker picker01"></span><span class="stars_picker picker02"></span><span class="stars_picker picker03"></span><span class="stars_picker picker04"></span><span class="stars_picker picker05"></span>
+						<div class="bg_star">
+						</div>
+					</div><!--누르면 별점이 체크된다요-->
+				</div>
+				<div class="stars_after">
+					<div class="stars_text stars_float ">
+						<p>가격</p>
+					</div>
+					<div class="stars_select stars_float"><!--누르면 별점이 체크된다요-->
+						<span class="stars_picker picker01"></span><span class="stars_picker picker02"></span><span class="stars_picker picker03"></span><span class="stars_picker picker04"></span><span class="stars_picker picker05"></span>
+						<div class="bg_star">
+						</div>
+					</div><!--누르면 별점이 체크된다요-->
+				</div>
+				<form>
+					<textarea class="review_text" id="reviewInput" cols="30" maxlength="1000" placeholder="리뷰 작성 시 광고 및 욕설, 비속어나 타인을 비방하는 문구를 사용하시면 비공개될 수 있습니다."></textarea>
+					<input type="button" value="작성완료" class="send_review"/>
+				</form>
+			</div>
+
+			<!--상품리뷰작성을 눌러야 튀어나오는 놈 끝-->
+			
+			<!--리뷰 덩어리들-->
+			<div class="review_text_box top_line ">
+				<div class="person_star">
+					<div class="textbox_star">
+						<span><p>내용</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color8"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div><div class="textbox_star">
+						<span><p>디자인</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color8"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div>
+					<div class="textbox_star">
+						<span><p>가격</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color8"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div>
+				</div>
+				<div class="person_day">
+					<span class="name">김 * 혜</span>
+					<span class="data">2020-01-08</span>
+				</div>
+			<p class="coment">아이가 너무 너무 좋아합니다.</p>
+			
+			<img src="" alt=""/>
+			
+			</div>			
+			<!--리뷰 덩어리들 끝-->
+			<!--리뷰 덩어리들-->
+			<div class="review_text_box">
+				<div class="person_star">
+					<div class="textbox_star">
+						<span><p>내용</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color7"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div><div class="textbox_star">
+						<span><p>디자인</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color7"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div>
+					<div class="textbox_star">
+						<span><p>가격</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color7"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div>
+				</div>
+				<div class="person_day">
+					<span class="name">조 * 녀</span>
+					<span class="data">2020-01-30</span>
+				</div>
+			<p class="coment">이런 종류 찾고 있었는데~  세일 가격에 잘 샀어요.</p>
+			
+			<img src="" alt=""/>
+			
+			</div>			
+			<!--리뷰 덩어리들 끝-->
+			<!--리뷰 덩어리들-->
+			<div class="review_text_box">
+				<div class="person_star">
+					<div class="textbox_star">
+						<span><p>내용</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color8"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div><div class="textbox_star">
+						<span><p>디자인</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color8"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div>
+					<div class="textbox_star">
+						<span><p>가격</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color8"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div>
+				</div>
+				<div class="person_day">
+					<span class="name">김 * 혜</span>
+					<span class="data">2020-01-08</span>
+				</div>
+			<p class="coment">아이가 너무 너무 좋아합니다.</p>
+			
+			<img src="" alt=""/>
+			
+			</div>			
+			<!--리뷰 덩어리들 끝-->
+			<!--리뷰 덩어리들-->
+			<div class="review_text_box">
+				<div class="person_star">
+					<div class="textbox_star">
+						<span><p>내용</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color8"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div><div class="textbox_star">
+						<span><p>디자인</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color8"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div>
+					<div class="textbox_star">
+						<span><p>가격</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color8"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div>
+				</div>
+				<div class="person_day">
+					<span class="name">황 * 진</span>
+					<span class="data">2019-12-26</span>
+				</div>
+			<p class="coment">신기한지 꾹꾹 눌러가며 잘 놉니다.</p>
+			
+			<img src="" alt=""/>
+			
+			</div>			
+			<!--리뷰 덩어리들 끝-->
+			<!--리뷰 덩어리들-->
+			<div class="review_text_box bottom_line">
+				<div class="person_star">
+					<div class="textbox_star">
+						<span><p>내용</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color7"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div><div class="textbox_star">
+						<span><p>디자인</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color8"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div>
+					<div class="textbox_star">
+						<span><p>가격</p></span>
+						<span>
+							<div class="star_area">
+								<div class="star_color star_color7"></div>
+								<img src="./img/detail/star.png" alt="star"/>
+							</div>
+						<span>
+					</div>
+				</div>
+				<div class="person_day">
+					<span class="name">유 * 순</span>
+					<span class="data">2019-12-16</span>
+				</div>
+			<p class="coment">7개월 아기에게 책은 크게 필요가 없네요. 조금 더 크면 보겠죠? 아이가 좋아해요. 자꾸 입에 넣는데 귀가 치발기 스탈 이었음 좋았을 것 같아요 ㅎㅎ</p>
+			
+			<img src="./img/detail/review01.jpg" alt="아기동물쏭"/>
+			<img src="" alt=""/>
+			
+			</div>			
+			<!--리뷰 덩어리들 끝-->
+				<div class="pagination">
+					<a href="#none" class="page_prv"> ◁ </a>
+					<a href="#none" class="numsel">1</a>
+					<a href="#none">2</a>
+					<a href="#none">3</a>
+					<a href="#none">4</a>
+					<a href="#none">5</a>
+					<a href="#none" class="page_next">▷</a>
+				</div>
+		</div>
+		
+		<div  class="line">
+			<ul  id="tab_detail_qa" >
+				<li >
+					<a href="#tab_detail_product">
+						상품설명
+					</a>
+				</li>
+				<li>
+					<a href="#tab_detail_review">
+						상품리뷰
+					</a>
+				</li>
+				<li>
+					<a href="#tab_detail_qa" class=" btn_click" >
+						상품Q&amp;A
+					</a>
+				</li>
+				<li>
+					<a href="#tab_detail_infos" >
+						판매정보
+					</a>
+				</li>
+			</ul>
+			<h4>상품Q&amp;A</h4>
+			<div class="qanda_text_box">
+				<ul class="qna_box">
+					<li class="qna_line qna_after">
+						<span class="th">
+						 <p>답변완료</p>
+						</span>
+						<span class="td">
+							<p>Q 비밀글 입니다.</p>
+						</span>
+						<span class="td_icon">
+							<img src="./img/detail/lock.png" alt="잠금"/>
+						</span>
+						<span class="td_name">김 * 민</span>
+						<span class="td_date">2020-03-21</span>
+					</li>
+					<li class="qna_line qna_after">
+						<span class="th">
+						 <p>답변완료</p>
+						</span>
+						<span class="td">
+							<p>Q 비밀글 입니다.</p>
+						</span>
+						<span class="td_icon">
+							<img src="./img/detail/lock.png" alt="잠금"/>
+						</span>
+						<span class="td_name">김 * 혜</span>
+						<span class="td_date">2020-03-02</span>
+					</li>
+					<li class="qna_line qna_after bottom_line">
+						<span class="th">
+						 <p>답변완료</p>
+						</span>
+						<span class="td">
+							<p>Q 비밀글 입니다.</p>
+						</span>
+						<span class="td_icon">
+							<img src="./img/detail/lock.png" alt="잠금"/>
+						</span>
+						<span class="td_name">김 * 미</span>
+						<span class="td_date">2020-02-28</span>
+					</li>
+				</ul>
+			
+			</div>			
+				<div class="pagination">
+					<a href="#none" class="page_prv"> ◁ </a>
+					<a href="#none" class="numsel">1</a>
+					<a href="#none" >2</a>
+					<a href="#none" class="page_next">▷</a>
+				</div>
+		</div>
+		
+		<div class="line">
+			<ul  id="tab_detail_infos" >
+				<li >
+					<a href="#tab_detail_product">
+						상품설명
+					</a>
+				</li>
+				<li>
+					<a href="#tab_detail_review" >
+						상품리뷰
+					</a>
+				</li>
+				<li>
+					<a href="#tab_detail_qa" >
+						상품Q&amp;A
+					</a>
+				</li>
+				<li>
+					<a href="#tab_detail_infos" class=" btn_click" >
+						판매정보
+					</a>
+				</li>
+			</ul>
+			<h4>판매정보</h4>
+			<div class="sell_info">
+				<h5>배송</h5>
+				<ul>
+					<li class="qna_after top_line">
+						<span class="th">
+							<p>배송방법</p>
+						</span>
+						<span class="td">
+							<ol>
+								<li>택배 / CJ 대한통운</li>
+								<li>네이버페이 구매 후 반품/교환 시 우체국 택배로 자동 수거되지 않으며, 북트리 전용 택배사인 CJ대한통운으로 수거처리 됩니다.</li>
+							</ol>
+						</span>
+					</li >
+					<li  class="qna_after bottom_line">
+						<span class="th">
+							<p>배송비</p>
+						</span>
+						<span class="td">
+							<ol>
+								<li>기본 배송비 2,500원 (제주/도서산간 지역의 경우 추가비용발생)</li>
+								<li>
+30,000원 이상무료(단, 네이버페이와 같은 간편결제시 제주/도서산간 지역의 경우 추가비용이 발생합니다.)</li>
+							</ol>
+						</span>
+					</li>				
+				</ul>	
+				<h5>교환/반품 안내(도서)</h5>
+				<ul>
+					<li class="qna_after top_line">
+						<span class="th">
+							<p>반품/교환 방법</p>
+						</span>
+						<span class="td">
+							<ol>
+								<li>마이페이지 > 반품/교환 신청 및 조회, 고객센터(1544-1544)로 유선 연락</li>
+							</ol>
+						</span>
+					</li >
+					<li class="qna_after">
+						<span class="th">
+							<p>반품/교환 가능 기간</p>
+						</span>
+						<span class="td">
+							<ol>
+								<li>출고변심반품의 경우 수령 후 7일 이내</li>
+								<li>재화등의 내용이 표시·광고의 내용과 다르거나 계약내용과 다르게 이행된 경우에는 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내에 청약철회가 가능 (단, 수령일로 부터 최대 3개월)</li>
+							</ol> 
+						</span>
+					</li >
+					<li class="qna_after">
+						<span class="th">
+							<p>반품/교환 비용</p>
+						</span>
+						<span class="td">
+							<ol>
+								<li>고객의 단순변심 및 구매 착오로 인한 상품 반송비용은 고객 부담</li>
+							</ol>
+						</span>
+					</li >
+					<li class="qna_after">
+						<span class="th">
+							<p>반품/교환 불가사유	</p>
+						</span>
+						<span class="td">
+							<ol>
+								<li>소비자에게 책임이 있는 사유로 재화등이 멸실되거나 훼손된 경우. 다만, 재화등의 내용을 확인하기 위하여 포장 등을 훼손한 경우는 제외</li>
+								<li>소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우</li>
+								<li>복제가 가능한 상품 등의 포장을 훼손한 경우</li>
+								<li>디지털 컨텐츠인 eBook, 오디오북 등을 1회 이상 다운로드를 받았을 경우</li>
+								<li>시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우</li>
+								<li>전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우</li>
+							</ol>
+						</span>
+					</li >
+					<li class="qna_after">
+						<span class="th">
+							<p>소비자 피해보상</p>
+						</span>
+						<span class="td">
+							<ol>
+								<li>상품의 불량에 의한 반품, 교환, A/S, 환불, 품질보증 및 피해보상 등에 관한 사항은 소비자분쟁해결기준(공정거래위원회 고시)에 준하여 처리됨</li>
+							</ol>
+						</span>
+					</li >
+					<li class="qna_after">
+						<span class="th">
+							<p>환불 지연에 따른 배상</p>
+						</span>
+						<span class="td">
+							<ol>
+								<li>대금 환불 및 환불 지연에 따른 배상금 지급 조건, 절차 등은 전자상거래 등에서의 소비자 보호에 관한 법률에 따라 처리</li>
+							</ol>
+						</span>
+					</li >
+					<li  class="qna_after bottom_line">
+						<span class="th">
+							<p>배송비</p>
+						</span>
+						<span class="td">
+							<ol>
+								<li>기본 배송비 2,500원 (제주/도서산간 지역의 경우 추가비용발생)</li>
+								<li>
+30,000원 이상무료(단, 네이버페이와 같은 간편결제시 제주/도서산간 지역의 경우 추가비용이 발생합니다.)</li>
+							</ol>
+						</span>
+					</li>				
+				</ul>		
+				<h5>취소/환불 안내(티켓)</h5>
+				<ul>
+					<li class="qna_after top_line">
+						<span class="th">
+							<p>취소환불방법</p>
+						</span>
+						<span class="td">
+							<ol>
+								<li>상품정보 참조</li>
+							</ol>
+						</span>
+					</li >
+					<li  class="qna_after bottom_line">
+						<span class="th">
+							<p>배송비</p>
+						</span>
+						<span class="td">
+							<ol>
+								<li>기본 배송비 2,500원 (제주/도서산간 지역의 경우 추가비용발생)</li>
+								<li>
+30,000원 이상무료(단, 네이버페이와 같은 간편결제시 제주/도서산간 지역의 경우 추가비용이 발생합니다.)</li>
+							</ol>
+						</span>
+					</li>				
+				</ul>	
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		</div><!--wrap-->
+	</section><!--detail-->
+	<aside id="aside">
+		<a href="#"></a>
+		<p>맨위로</p>
+	</aside>
+	<footer>
+		<div class="wrap">
+		<ul class="footer_01">
+			<li>
+				<h3>
+					<a href="#">
+						<img src="./img/logo_f.svg" alt="하단로고"/>
+					</a>
+				</h3>
+			<li>
+				<address>
+					<p> 북트리 인천 서구 봉수대로 254 대표 : 홍길동</p>
+					<p> 사업자 등록번호 : 245-47-45987 </p>
+					<p> 대표전화 : 1544-1544(발신자 부담전화) 팩스:0501-234-1544(지역번호공통)</p>
+					<p>인천광역시 통신판매업신고번호 : 제 759호 &nbsp; ▶ <a href="#"> 사업자정보확인</a></p>
+					<span>COPYRIGHT(C) BOOKTREE ALL RIGHTS RESERVE.</span>
+				</address>
+			</li>
+		</ul>
+		<ul class="footer_02">
+			<li class="sns">
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</li>
+			<li class="bnb">	
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li>|</li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li>|</li>
+					<li><a href="#">이용안내</a></li>
+					<li>|</li>
+					<li><a href="#">이용약관</a></li>
+				</ul>
+			</li>
+			<li class="ftc">
+				<a href="#"><img src="./img/icon.png" alt="공정거래위원회"/></a>
+			</li>
+		</ul>
+		</div>
+	</footer>
+
+
+</body>
+</html>
