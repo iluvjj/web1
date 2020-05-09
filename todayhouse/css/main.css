@@ -1,0 +1,311 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+/*
+font-family: 'Noto Sans KR', sans-serif;
+*/
+/* 기본적인 스타일 적용 */
+* { margin:0; padding:0; box-sizing:border-box;}
+html{font-size:11pt;}
+li { list-style:none; }
+a { text-decoration:none; color:#333;}
+img {border:0; vertical-align:top;}
+body { color:#333; font-size:14px; font-family: 'Noto Sans KR', sans-serif; line-height:1.2; }
+
+.container{
+   width:1200px;
+   margin:0 auto;
+}
+
+.clear:after{
+   content:"";
+   clear:both;
+   display:block;
+   width:0;
+   height:0;
+   visibility:hidden;
+}
+.logo img{
+   width:50px;
+   margin-top:20px;
+}
+header{
+   height:200px;
+   text-align:center;
+}
+.util ul{float:right;}
+.util ul li{float:left;}
+.util ul li a{
+   display:block;
+   padding:5px 30px;
+}
+
+/* gnb 영역 */
+#gnb{
+   display:block;
+   width:100%; /* 100% 사용해도 상위 container가 1200px 이므로 가로는 1200px */
+}
+#gnb ul li{
+   float:left;
+   width:200px;
+   margin:20px 0;
+}
+
+#gnb ul li a{
+   display:block;
+   width:100%;
+   padding:20px 0;
+   font-weight:500;
+   position:relative;
+   font-size:1.2rem; /* 11pt x 1.2 */
+}
+#gnb ul li a:hover{
+   color:#35c5ef;
+   font-weight:700;
+}
+#gnb ul li a:hover:after{
+   content:"";
+   background-color:#35c5ef;
+   width:50%;
+   height:3px;
+   position:absolute;
+   left:25%;
+   bottom:0;
+}
+/*비쥬얼 배너 영역*/
+#banner_sec{
+	margin-bottom:100px;
+	text-align:center;
+}
+#bn img{
+	height:500px;
+}
+
+/*브랜드소개영역*/
+#brand_sec{
+	margin-bottom:100px;	
+	height:500px;
+	background:url(../images/brand.png) no-repeat left center;
+	overflow:hidden;
+}
+.bar{
+	width:300px;
+	height:5px;
+	background:#78b3c5;
+	display:block;
+	float:right;
+}
+.brand_txt{
+	width:500px;
+	padding:25px;
+	background:rgba(255,255,255,0.6);
+	margin-top:60px;
+	margin-left:50%
+}
+.brand_txt h3{
+	font-weight:700;
+	color:#78b3c5;
+	font-size:1.5rem;
+	margin-bottom:20px;
+}
+.brand_txt p{
+	line-height:2.5;
+}
+.txt_bg {
+	background:#deeff6;
+	
+}
+
+.brand_circle{
+	text-align:right;
+}
+.brand_circle img{
+	margin:20px 20px 0;
+}
+.brand_circle img:hover{
+	transform:scale(1.1);
+}
+
+/*인기상품 영역*/
+#pop_sec{
+	margin-bottom:100px;
+}
+.pop_box{
+	width:400px;
+	float:left;
+}
+.pop_tit{
+	font-size:3rem;
+	font-weight:700;
+	letter-spacing:-3px;
+	color:#78b6c5;
+}
+.pop_des{
+	color:#ccc;
+	line-height:2;
+	margin:20px 0; 
+}
+.more_btn{
+	border:1px solid #78b3c5;
+	text-align:center;
+	width:100px;
+	padding:10px 0;
+	color:#78b3c5;
+	cursor:pointer;
+}
+
+.pop_list{
+	float:right;
+}
+.pop_list li {
+	float:left;
+}
+.pop_list img{
+	width:210px;
+}
+
+.pop_list li:nth-child(2){
+	margin:0 20px;
+}
+.pop_list img:hover{
+	transform:translateY(-20px);
+}
+
+/*스토리 영역*/
+#story_sec{
+	margin-bottom:100px;
+}
+.story_tit, .sns_tit {
+	text-align:center;
+	color:#666;
+}
+.story_tit h2, .sns_tit h2{
+	font-size:2rem;
+	margin-bottom:20px;
+}
+.story_tit h3, .sns_tit h3{
+	font-size:1.2rem;
+	font-weight:300;
+}
+
+.story_contents{
+	height:900px;
+	margin:50px 0;
+	background-image:url(../images/story_1.png), url(../images/story_1.png);
+	background-repeat:no-repeat, no-repeat;
+	background-position:right top, left bottom;
+	position:relative;
+	line-height:2.5;
+}
+.story01{
+	background:rgba(255,255,255,0.8);
+	width:560px;
+	padding:20px;
+	position:absolute;
+	top:100px; left:200px;
+	border-left:4px solid #78b3c5;
+	text-align:left;
+}
+.story02{
+	background:rgba(255,255,255,0.8);
+	width:560px;
+	padding:20px;
+	position:absolute;
+	bottom:100px; right:200px;
+	border-right:4px solid #78b3c5;
+	text-align:right;
+}
+.story01 h3, .story02 h3{
+	font-size:1.3rem;
+	color:#236680;
+	font-weight:700;
+}
+/*sns 영역*/
+
+#sns_sec{
+	margin-bottom:60px;
+}
+.sns_tit span{
+	color:#78b3c5;
+	font-weight:700;
+}
+.sns_contents{margin:0 auto;}
+
+.sns_contents ul li img {
+	width:200px;
+	
+}
+.sns_contents ul li{
+	float:left;
+	margin:30px 25px;
+	width:200px; height:200px;
+	overflow:hidden;
+	position:relative;
+}
+.sns_contents ul li:first-child{
+	margin-left:0;
+}
+.sns_contents ul li:last-child{
+	margin-right:0;
+}
+.sns_contents ul li:hover span{
+	position:absolute;
+	display:block;
+	width:200px; height:200px;
+	background:rgba(0,0,0,0.5);
+	top:0; left:0;
+	}
+
+.inner_btn a{
+	padding:10px;
+	text-align:center;
+	color:#fff;
+	display:block;
+	width:90px;
+	border:2px solid #fff;
+	margin-top:80px;
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
+}
+
+
+/*푸터*/
+
+footer{
+	background:#deeff6;
+	height:300px;
+	text-align:center;
+	padding:20px 200px;
+}
+.info li {
+	display:inline-block;
+}
+.info li a {
+	display:block;
+	padding:15px 40px;
+	font-weight:500;
+	color:#666;
+}
+footer p {
+	margin:15px 0;
+}
+
+.icon li {
+	display:inline-block;
+	padding:20px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

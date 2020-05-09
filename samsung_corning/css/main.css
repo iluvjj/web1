@@ -1,0 +1,158 @@
+@charset "utf-8";
+body { 
+	width:1920px;
+	max-width:100%;
+	color:#313131;
+	}
+.wrap {
+	width:1200px;
+	margin:0 auto;
+}
+img {vertical-align:top;}
+a { text-decoration:none;}
+/*해더*/
+
+#header {
+	height:90px;
+}
+#header h1 {
+	height:90px;
+	display:inline-block;
+	padding-top:30px;
+}
+#gnb { 
+	height:90px;
+	float:right;
+	padding-top:32px;
+}
+#gnb ul {
+display:inline-block;
+}
+#gnb:after{
+	content: '';
+	clear:both;
+	display:block;
+}
+#gnb ul li {
+	float:left;
+	padding:0 20px;
+}
+#gnb > a {
+	height:55px;
+	padding:0 20px;
+	position:relative;
+	display:inline-block;
+	bottom:35px;
+}
+#gnb > a{
+	border-left:1px solid #ddd;
+}
+#gnb >a > img {
+	position:relative;
+	top:32px;
+}
+
+/*배너어쩌고*/
+#main_banner {position:relative;}
+
+#main_banner .prv, #main_banner .next {
+	position:absolute;
+	top:50%;
+	margin-top:-27.5px;
+	height:55px; width:55px;
+}
+#main_banner .prv {
+	background:url('../images/icon_ar_l.png') no-repeat center/cover;
+	left:30px;
+	
+}
+#main_banner .next {
+	background:url('../images/icon_ar_r.png') no-repeat center/cover;
+	right:30px;
+}
+/*배너안에 숫자 있가만들어야지.*/
+#carousel { 
+	position:absolute;
+	top:55%; left:25%;
+}
+#carousel>span { 
+	float:left;
+	width:25px; height:25px;
+	background:#fff;
+	color:#324e8f;
+	cursor:pointer;
+	margin-left:5px;
+	text-align:center;
+	font-weight:bold;
+	line-height:25px;
+	background:#fff;
+}
+#carousel .play { margin-left:20px;}
+#carousel>span:hover {
+	color:#fff;
+	background:#324e8f;
+}
+/*소개하고 어쩌고.*/
+
+#info {
+	border-bottom:1px solid #ddd;
+}
+#info ul:after{
+	content: '';
+	clear:both;
+	display:block;
+}
+#info ul{ padding:40px 0;}
+#info ul li {
+	float:left;
+	width:33.3333333333%;
+	height:80px;
+}
+#info ul li dt, #info ul li dd { 
+	padding:0 0 0 100px;
+}
+
+#info ul li:nth-child(1){
+	background:url('../images/link-thum01.png') no-repeat left;
+}
+#info ul li:nth-child(2){
+	background:url('../images/link-thum02.png') no-repeat left;
+}
+#info ul li:nth-child(3){
+	background:url('../images/link-thum03.png') no-repeat left;
+}
+#info ul li dl{
+	padding-top:10px;
+}
+
+#info ul li dd {
+	margin-top:8px;
+	line-height:1.3;
+}
+#info ul li dt a {
+	color:#324e8f;
+	font-weight:bold;
+}
+#info ul li dd a  {
+	color:#333;
+}
+
+/*푸터*/
+#footer {
+	padding:80px 0 100px;
+	margin:0 auto;
+	display:flex;
+	flex-wrap:nowrap;
+	align-items:center;
+	justify-content:center;
+	
+}
+#footer ul li {
+	float:left;
+	margin-right:20px;
+}
+#footer ul li a { 
+	font-size:0.8rem;
+	color:#313131;
+}
+#footer_copy { padding-left:20px;}

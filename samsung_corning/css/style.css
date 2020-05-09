@@ -1,0 +1,150 @@
+@charset "utf-8";
+a, a:visited, a:active{
+	text-decoration:none;
+	color:#ccc;
+}
+a:hover{
+	text-decoration:underline;
+	color:#666;
+}
+header {
+	height:91px;
+}
+header h1 {
+	float:left;
+	margin:20px 140px 0 0;
+}
+header nav{
+	float:right;
+	margin:20px 140px 0 0;
+}
+header nav li { 
+	float:left;
+}
+header nav li a {
+	display:block;
+	padding:20px;
+}
+.inner {
+	position:relative;
+	width:1200px;
+	margin:0 auto;
+}
+.clear::after{
+	content:"";
+	clear:both;
+	display:block;
+}
+.topmenu {
+	position:absolute;
+	top:0; right:0;
+	border-left:1px solid #666;
+}
+.topmenu >a{
+	padding:40px 30px 5px;
+	display:block;
+}
+section{
+	min-height:670px;
+	font-size:12pt;
+}
+
+.visual-wrap{
+	position:relative;
+	margin:0 auto;
+	max-width:1920px;
+	height:496px;/*이미지세로값*/
+}
+.visual-img{
+	position:absolute;
+	top:0; left:50%;
+	transform:translateX(-50%);
+}
+.visual-wrap>a{
+	position:absolute;
+	top:50%; 
+	width:31px;
+	height:52px;
+	text-indent:-9999999px;
+}
+.visual-wrap>a.btn-prev{
+	left:30px;
+	background-image:url("../images/icon_ar_l.png");
+}
+
+.visual-wrap>a.btn-next{
+	right:30px;
+	background-image:url("../images/icon_ar_r.png");
+}
+
+/**/
+.link-wrap{
+	padding:40px 0 50px;
+}
+.link-wrap ul li {
+	float:left;
+	width:400px;
+	padding:20px 0 0 100px;
+	background:url() 0 0 no-repeat;
+}
+.link-wrap ul li:nth-child(1){
+	background-image:url("../images/link-thum01.png");
+}
+.link-wrap ul li:nth-child(2){
+	background-image:url("../images/link-thum02.png");
+}
+.link-wrap ul li:nth-child(3){
+	background-image:url("../images/link-thum03.png");
+}
+.link-wrap ul li dt {
+	font-weight:bold;
+	color:steelblue;
+}
+.link-wrap ul li dd{
+	line-height:1.2;
+	margin-top:8px;
+}
+
+footer{
+	padding:50px;
+}
+.foot-inner{
+	width:630px;
+	margin:0 auto;
+}
+.foot-logo { float:left; }
+.foot-con {	float:right; }
+.foot-con li { float:left; }
+
+.foot-con li a {
+	display:block;
+	padding:0 10px;
+	border-right:1px solid #ccc;
+	font-size:9pt;
+}
+.foot-con li:last-child a{
+	border-right:0;/*마지막 a태그의 선 없애기*/
+}
+.foot-con li:first-child a{
+	padding-left:0;
+}
+.foot-con p {
+	font-size:8pt;
+	letter-spacing:-1px;
+	margin-top:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
