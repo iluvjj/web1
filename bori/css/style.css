@@ -1,0 +1,611 @@
+@charset "utf-8";
+@import "reset.css";
+
+/*공통 CSS*/
+.container {
+	width:90%;
+	max-width:1440px;
+	margin:0 auto;
+}
+
+.cfixed:after, .container:after{
+	display:block;
+	clear:both;
+	content:'';
+	width:0; height:0;
+	visibility:hidden;
+}
+.blind{
+	position:absolute;
+	width:0;
+	height:0;
+	line-height:0;
+	text-indent:-99999999px;
+	overflow:hidden;
+}
+.sec-tit{
+	font-size:36pt;
+	color:#40a3ec;
+	font-weight:normal;
+}
+.divider{
+	width:90%;
+	max-width:1132px;
+	margin:70px auto 0;
+	background-color:#40a3ec;
+}
+.m-divider {
+	width:60px;
+	margin:0 auto;
+	background:#40a3ec;
+	margin-top:70px;
+}
+
+.footer-logo {/*내로고 크기에따라 변경*/
+	width:150px;
+	text-align:center;
+	margin:o auto;
+	padding:10px 0 10px;
+}
+
+/*해더영역css*/
+.header {
+	position:relative;
+	padding:20px 5%;
+	/*컨테이너 영역 90%들어간 상태라 사이즈 가로 맞춰주기 위해 양옆 패딩 5%줌*/
+	
+}
+.logo {
+	float:left;
+	width:150px;
+	
+}
+
+.logo a {
+	/*로고를 텍스트로 쓸경우 사용*/
+	overflow:hidden;
+	width:200px;
+}
+
+.gnb {
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	width:100%;
+	background:#40a3ec;
+}
+
+.gnb li {
+	border-bottom:1px solid #fff;	
+}
+
+.gnb li a {
+	display:block;
+	padding:15px 0 15px 5%;
+}
+.menu-toggle-btn {
+	/*바깥쪽 span*/
+	float:right;
+	width:20px;
+	margin-top:50px;
+	/*로고 때문에 해더 세로가 길어지면 더 많은 px값 입력*/
+	cursor:pointer;
+	
+}
+
+.menu-toggle-btn span {
+	display:block;
+	width:100%;
+	height:2px;
+	background:#40a3ec;
+}
+
+.menu-toggle-btn span:nth-child(2) {
+	margin:5px 0;
+}
+/*메인 비쥬얼 배너*/
+.slider img {
+	display:block;
+	width:100%;
+	max-width:100%;
+	height:auto;
+}
+
+/*디스플레이 영역*/
+
+.display-section {
+	margin-top:70px;
+	text-align:center;
+}
+
+.display-section .sec-tit { 
+	margin-bottom:30px;
+}
+.display-section .desc {
+	color:#666;
+	line-height:1.9;
+}
+
+
+/*프로모션 영역*/
+.promotion-section {
+	margin:70px 0;
+}
+.promo-list li{
+	margin-top:50px;
+	text-align:center;
+}
+
+.promo-list li:first-child {
+	margin-top:0;
+}
+
+.promo-list li img {
+	height:100px;
+}
+.promo-list li h3 {
+	margin:20px 0;
+	color:#40a3ec;
+	font-weight:bold;
+	font-size:2em/*기존사이즈의 배수단위*/
+}
+.promo-list li p {
+	font-size:0.9em;
+	line-height:1.5;
+	color:#313131;
+}
+
+/*포토영역*/
+.photo-setction {
+	margin-top:70px;
+}
+
+.photo-setction .sec-tit {
+	width:90%;
+	max-width:100%;
+	margin:0 auto;
+	margin-bottom:50px;
+	text-align:center;
+}
+.photo-list li {
+	width:100%;
+}
+.photo-list li img {
+	width:100%;
+	max-width:100%;
+	height:auto;
+	display:block;
+}
+
+.photo-list li a {
+	display:block;
+	position:relative;
+	width:100%;
+	height:100%;
+	
+}
+.photo-list li a:before {
+	content:"";
+	display:block;
+	position:absolute;
+	top:0; left:0;
+	width:100%;
+	height:100%;
+	background:#40a3ec;
+	opacity:0;
+	transition:all 0.6s;
+}
+.photo-list li a:hover:before {
+	opacity:0.8;
+} 
+.info {
+	position:absolute;
+	top:0;
+	left:25px;
+	z-index:20;
+	opacity:0;
+	transition:all 0.4s;
+}
+
+.photo-list li a:hover .info {
+	opacity:1;
+	transform:translateY(30px);
+}
+
+.photo-list li .info h3 {
+	margin-bottom:20px;
+	font-size:1.3em;
+	color:#fff;
+	font-weight:bold;
+}
+.photo-list li .info span {
+	font-size:1em;
+	color:#fff;
+	line-height:1.8;
+	
+}
+
+/*승미씨가 간 사이 블로그 or 리뷰영역*/
+/*168-html*/
+.blog-section {
+	margin-top:70px;
+}
+
+.blog-section .sec-tit {
+	margin-bottom:50px;
+	text-align:center;
+}
+
+.blog-list li {
+	width:100%;
+	margin-top:50px;
+}
+
+.blog-list li img {
+	display:block;
+	width:100%;
+	max-width:100%;
+}
+
+.blog-list li time {
+	display:block;
+	font-size:0.9em;
+	color:#ccc;
+	margin:10px 0;
+
+}
+.blog-list li h3 {
+	color:#444;
+	line-height:1.5;
+}
+
+/*연락처영역*/
+/*202-html*/
+
+.contact-section {
+	margin-top:90px;
+}
+
+.contact-section .sec-tit {
+	margin-bottom:50px;
+	text-align:center;
+}
+
+.form-box input { 
+	padding-bottom:15px;
+	margin-bottom:40px;
+}
+.textarea textarea {
+	height:169.5px;
+}
+
+.send-btn {
+	margin-top:40px;
+	text-align:right;
+}
+
+.send-btn button {
+	padding:15px 30px;/*버튼사이즈 변경할때 원하는 사이즈로 수치변경*/
+	margin:0;
+	border:0;
+	color:#fff;
+	background-color:#40a3ec;/*여기 본인 주조색으로 변경*/
+}
+
+/*로케이션 영역*/
+/*231-html*/
+.location-section {
+	margin-top:70px;
+}
+
+.location-section .sec-tit {
+	text-align:center;
+	margin-bottom:50px;
+}
+/*
+로케이션 지도 넣는건
+html의 '<!-- 지도들어가는 부분 -->'에
+구글지도에서 검색해서 
+공유-> 지도퍼가기 탭에서 html복사.
+ex><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.176931476167!2d127.01747101531194!3d37.574451179796455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca34a1e5d10cb%3A0x756ba3cb77db1087!2z7Iit7J2467mM65Sp!5e0!3m2!1sko!2skr!4v1577771080941!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+이부분의 width:100%로 변경하면 끝
+*/
+
+/*푸터역역*/
+.footer {
+	margin-top:100px; /*디자인 따라 변경*/
+	text-align:center;
+	
+}
+
+.footer-logo{/*이건 왜인지 나는 직접 지정해야함 !!! */
+	margin:0 auto;
+}
+.copyright {
+	margin:20px 0;
+	color:#40a3ec;/*이것은 선택*/
+}
+
+
+/*미디어 쿼리 768px 태블릿용*/
+/*미디어 쿼리 768px 태블릿용*/
+/*미디어 쿼리 768px 태블릿용*/
+/*미디어 쿼리 768px 태블릿용*/
+
+@media all and (min-width:768px){
+	.divider{/*이거 쌤이랑 확인. 쌤은 dvider*/
+		margin-top:120px;
+	}
+	.m-divider{
+		margin-top:120px;
+	}
+	/*태블릿 해더영역*/
+	.header { 
+		position:static;/*초기화*/
+		padding:25px 50px;
+	}
+	.header .logo {
+		float:left;
+	}
+	.header .gnb {
+		display:block !important;		
+		position:static;
+		float:right;
+		width:auto;
+		margin-top:10px;
+		background:none;
+	}
+	.header .gnb li {
+		float:left;
+		margin-left:20px;
+		color:#40a3ec;/*본인주조색으루~*/
+		border-bottom:0;
+		/*ㅇㅕ기아래는 내 디자인때문에 나만 ..ㅎㅎ*/
+		margin-top:30px;
+	}
+	
+	.header .gnb li a{
+		padding:0;
+		font-size:1em;
+		color:#40a3ec;/*본인주조색으루~*/
+	}
+	header .gnb li a:hover {
+		font-weight:bold;
+	}
+	.menu-toggle-btn {
+		display:none;
+	}
+	
+	/*태블릿 드스플레이 영역*/
+	.display-section{
+		margin-top:90px;
+	}
+	
+	/*태블릿 프로모션 영역*/
+	.promotion-section {
+		margin-top:120px;
+	}
+	
+	.promo-list li {
+		float:left;
+		width:23.046875%;
+		/*
+		가변 크기 계산법
+		177px ÷ 768px x 100 = 가변크기 (퍼센트값)
+		*/
+		margin-left:2.604166666666667%;
+		/*20px ÷ 768xp x 100 */
+		margin-top:0;
+	}
+	.promo-list li:first-child {
+		margin-left:0;
+	}
+	.promo-list li p {
+		color:#777;/*이건 자기맘대루하소*/
+	}
+	
+	/*태블릿 포토영역*/
+	.photo-setction {
+		margin-top:110px;
+	}
+	
+	.photo-setction .sec-tit {
+		margin-bottom:80px;
+	}
+	.photo-list li{
+		float:left;
+		width:50%;
+	}
+	/*이영역은 내디자인때문에 다른 영역*/
+	#hbo {
+		width:100% ;
+	}
+	/*여기까지*/
+	
+	
+	/*태블릿 블로그 영역*/
+	/*태블릿 블로그 영역*/
+	/*태블릿 블로그 영역*/
+	.blog-section {
+		margin-top:110px;
+	}
+	.blog-section .sec-tit {
+		margin-bottom:80px;
+	}
+	.blog-list li {
+		float:left;
+		width:31.51041666666667%;
+		/* 
+		 242px ÷ 768px x 100 
+		
+		*/
+		margin-left:2.734375%;
+		/*
+		21px ÷ 768 px X 100
+		*/
+	}
+	.blog-list li:first-child{
+		margin-left:0;
+	}
+	
+	
+	/*태블릿 연락처영역*/
+	.contact-section{
+		margin-top:180px;
+	}
+	.contact-section .sec-tit{
+		margin-bottom:70px;
+	}
+	
+	.form-box .form, .form-box .textarea{
+		float:left;
+		width:48.69791666666667%;
+		/*
+		768 - 20 (마진값) :74
+		748 ÷ 2 --> 374.
+		
+		.textarea
+		374÷768 x 100 = 
+		*/
+
+	}
+	.form-box .form {
+		margin-right:2.604166666666667%;
+	}
+	
+	.form-box .form import:first-child {
+		margin-bottom:0;
+	}
+	
+	/*태블릿 위치 영역*/
+	.location-section .sec-tit{
+		margin:70px 0;
+		text-align:center;
+	}
+	/*태블릿 푸터영역*/
+	.footer {
+		margin:35px 0;
+	}
+	
+}
+/*데탑용 1132px 기준 */
+@media all and (min-width:1132px){
+	/*pc용 디스플레이영역*/
+	.display-section {
+		text-align:left;
+	}
+	.display-section .sec-tit{
+		float:left;
+		margin-bottom:0;
+	}
+	.display-section .desc {
+		position:relative;
+		float:right;
+		padding-left:20px;
+		color:#616161;
+		line-height:1.9;
+	}
+	.display-section .desc:before{
+		content:"";
+		display:block;
+		position:absolute;
+		top:10px;
+		left:0;
+		background:#666;
+		width:2px;
+		height:45px;
+	} 
+	
+	/*pc용 프로모션 영역*/
+	.promo-list li {
+		/*가로 전체크기 :1132
+		- 총 마진 값 :60
+		- 전체크기- 총마진값 = 1072
+			1072÷ 4 = 268
+			
+			268px ÷ 1132 x 100
+		*/
+		width:23.67491166077739%;
+		/* 268 ÷ 1132 x 100 */
+		margin-left:1.76678445229682%;
+		/* 20 ÷ 1132 x 100  마진 %rkqt*/
+	}
+	.promo-list li:first-child{
+		margin-left:0;
+	}
+	/* pc포토영역*/
+	.photo-setction .sec-tit{
+		text-align:left;
+	}
+	.photo-list li{
+		width:25%;
+		
+	}
+	/*여긴 나만!!*/
+	#hbo {
+		width:50%;
+	}
+	/*여기까지.*/
+	
+	/*pc블로그 영역*/
+	.blog-section .sec-tit{
+		float:left;
+		margin-bottom:0;
+	}
+	.blog-section .blog-list {
+		float:right;
+		width:74.5583038869258%;
+		/* 844px ÷ 1132 x 100 */
+	}
+	.blog-section .blog-list li {
+		width:31.75355450236967%;
+		/*268px(기준크기) ÷ 844( 블로그 리스트 기준) x 100*/
+		margin-left:2.369668246445498%;
+		/*이부븐은 선생님이랑 다름 내가 안이뻐서 고친곳*/
+		margin-top:0;
+	}	
+	.blog-section .blog-list li:first-child{
+		margin-left:0;
+	}
+	
+	/* pc 연락처 영역*/
+	.contact-section .sec-tit {
+		float:left;
+		margin-bottom:0;
+	}
+	.form-box {
+		float:right;
+		width:74.5583038869258%;
+		/* 844px ÷ 1132 x 100 */
+	}
+	.form-box .form, .form-box .textarea{
+		/*
+		 844px - 20 = 824px
+		 824 ÷ 2 = 412
+		*/
+		width:48.81516587677725%;
+		/* 412 ÷ 844 x 100 */
+		
+	}
+	.form-box .form {
+		margin-right:2.369668246445498%;
+	}
+	
+	/*pc용 위치*/
+	.location-section .sec-tit{
+		margin:60px 0;
+		text-align:left;
+	}
+}
+
+/*가변계산은 선생님 크롬?구글드라이브거기에 이미지로(글씨가)들어있당*/
+/*
+나의 오타는 책임져 줄 수 가 없다.
+예를들면. id class...ㅎㅎ
+도움이되길바랑다! 굿럭!!컄컄컄
+*/
+
+
+
+

@@ -1,0 +1,418 @@
+@charset "utf-8";
+@import url("reset.css");
+@import url("font.css");
+/*after 클래스고정*/
+.c_after:after, .c_before:before{
+	content:"";
+	clear:both;
+	display:block;
+}
+.c_after > li {
+	float:left;
+}
+/*배경고정 css*/
+body{
+	width:100%; height:auto;
+	background-color:#131313;
+	position:relative;
+	top:0;
+	font-size:14px;
+	font-family:sc3;
+}
+/*배경 도형 css*/
+body:after,body:before{
+	content:"";
+	clear:both;
+	display:block;
+	position:fixed;
+	border:2px solid #555;
+	background:#131313;
+	z-index:-2;
+}
+body:after{
+	width:450px; height:450px;
+	transform:rotate(20deg);
+	top:60%;
+	left:-200px;
+}
+body:before{
+	width:650px; height:650px;
+	transform:rotate(-30deg);
+	top:-25%;
+	right:-300px;
+}
+/*컨테이너*/
+.wrap {
+	width:75%;
+	max-width:1400px;
+	margin:0 auto;
+	position:relative;
+}
+/*스크롤%*/
+.progressContainer{
+	width:100%;
+	height:5px;
+	background:#fff;
+}
+.progressBar{
+	height:5px;
+	background:#17a2b8;
+	width:0%;
+}
+/*해더*/
+.block{
+height:80px; width:100%;
+background:#313131;
+
+	z-index:9998;
+}
+#header{
+	position:fixed;
+	width:100%;
+	z-index:9999;
+}
+.logo>a{ 
+	color:#fff;
+	font-size:3rem;
+	line-height:80px;
+	position:absolute;
+}
+
+
+/*GNB부분*/
+nav {
+	margin:0 auto;
+}
+nav > ul {
+	width:50%; height:80px;
+	margin:0 0 0  auto;
+	z-index:999;
+	display:blcok;
+	text-align:center;
+	overflow:hidden;
+}
+nav > ul > li {
+	height:80px;	 
+	padding:0 20px; 
+	z-index:999;
+}
+nav > ul > li  > a {
+	color:#fff;
+	font-size:1.3rem;
+	line-height:80px;
+	width:100%; height:100%;
+	display:block;
+}
+
+nav > ul > li  > a:hover,  nav > ul > li  > a:active{
+	color:#17a2b8;
+}
+
+/*메인*/
+
+#main .main_text {
+	color:#fff;
+	text-align:center;
+	height:1000px;
+}
+
+#main .main_text dl{
+	z-index:-1;
+	transform:translateY(0);
+	opacity:1;
+}
+#main .main_text dt {
+	font-size:2rem;
+	font-family:sc5;
+	letter-spacing:3px;
+	padding:320px 0 20px;
+}
+#main  .main_text dl .spacing_far{
+	letter-spacing:23px;
+}
+#main .main_text dd {
+	font-size:5rem;
+	font-family:sc5;
+	letter-spacing:5px;
+}
+
+/*어바웃*/
+#About {
+	color:#fff;
+	padding:80px 0 150px;
+}
+.about_img{
+	position:absolute;
+	width:40%;
+	height:700px; left:20px; top:300px;
+	transform:translateY(80px);
+}
+.about_img > img {
+	width:100%;
+}
+#About h3 {
+	text-align:right;
+	font-size:10rem;
+	font-family:sc5;
+	color:rgba(255,255,255,0.4);
+	padding:30px 0 80px;
+}
+#About h4{
+	text-align:right;
+	font-size:2rem;
+	font-family:sc4;
+	color:rgba(255,255,255,0.9);
+	padding-top:40px;
+}
+#About p{
+	width:40%; height:auto;
+	margin: 0 0 0 auto;
+	line-height:3;
+	font-size:1rem;
+	font-family:sc3;
+	word-break:break-all;
+	transform:translateX(45px);
+}
+
+/*서비스*/
+#Services  {
+	padding:100px 0 40px;
+	text-align:center;
+	color:#fff;
+	height:1000px;
+}
+#Services .wrap > p {
+	font-size:2rem;
+	font-family:sc4;
+	color:rgba(255,255,255,0.9);
+	
+}
+#Services .wrap > h3 {
+	font-size:10rem;
+	font-family:sc5;
+	color:rgba(255,255,255,0.4);
+	padding:60px 0;
+}
+
+#Services .wrap> ul > li {
+	width:30%; height:80px;
+	margin-left:5%;
+	padding:40px 0 ;
+}
+#Services .wrap> ul > li:first-child{
+	margin-left:0;
+}
+#Services img {
+	width:40%;
+}
+figure:hover img{ 
+	transform:scale(1.2);
+	transition:0.5s;
+}
+figcaption{
+	padding:20px 0;
+}
+figcaption  h3{
+	font-size:1.5rem;
+	font-family:sc5;
+	padding-bottom:15px;
+	margin:0 auto;
+	
+}
+
+#Services .wrap figcaption li:first-child{
+	padding-top:20px;
+}
+#Services .wrap figcaption li{
+	padding-top:40px;
+}
+#Services .wrap figcaption p {
+	line-height:20px;
+	float:left;
+	width:20%;
+}
+#Services .wrap figcaption span{
+	width:75%; height: 20px;
+	margin-left:5%;
+	display:block;
+	background:#fff;
+	float:right;
+	color:#313131;
+	line-height:20px;
+
+}
+
+.poto > div {
+	color:#313131;
+	height:20px;
+	width:0%;
+	background:#17a2b8;
+}
+.illr > div {
+	color:#313131;
+	line-height:20px;
+	width:0%;
+	background:#17a2b8;
+}
+.html > div {
+	color:#313131;
+	line-height:20px;
+	width:0%;
+	background:#17a2b8;
+}
+.css > div {
+	color:#313131;
+	line-height:20px;
+	width:0%;
+	background:#17a2b8;
+}
+.js > div {
+	color:#313131;
+	line-height:20px;
+	width:0%;
+	background:#17a2b8;
+}
+.jq > div {
+	color:#313131;
+	line-height:20px;
+	width:0%;
+	background:#17a2b8;
+}
+/*포트폴리오*/
+
+#Portfolio {
+	padding:100px 0 40px;
+	text-align:center;
+	color:#fff;
+}
+#Portfolio .wrap > p {
+	font-size:2rem;
+	font-family:sc4;
+	color:rgba(255,255,255,0.9);
+}
+#Portfolio .wrap > h3 {
+	font-size:10rem;
+	font-family:sc5;
+	color:rgba(255,255,255,0.4);
+	padding:60px 0;
+}
+/*포트폴리오 내용안에 text들 css*/
+#Portfolio  .wrap> div  h5{
+	font-size:5rem;
+	font-family:sc5;
+	padding:20px 0 40px;
+}
+#Portfolio  .wrap> div  h3{
+	font-size:2rem;
+	font-family:sc3;	
+	padding:20px 0 40px;
+}
+#Portfolio  .wrap> div  p{
+	font-size:1.1rem;
+}
+/*포트폴리오 한줄한줄 css*/
+#Portfolio  .wrap> div {
+	height:500px;
+	margin:0 auto;
+	padding-top:60px;
+}
+
+figcaption > ul > li:first-child{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+/*한줄안에 이미지와 텍스트 정렬등.css*/
+
+.design_img, .Publishing_text {
+	float:left;
+}
+.Publishing_img, .design_text{
+	float:right;
+}
+.Publishing_text {
+	text-align:right;
+	margin-right:5%;
+}
+.design_text{
+	text-align:left;
+	margin-left:5%;
+}
+.design_img {
+	margin-left:10%;
+	transform:translateX(-45px);
+}
+.Publishing_img{
+	margin-right:10%;
+	transform:translateX(45px);
+}
+.pofol_img > img {
+	width:100%;
+}
+.Publishing > a, .design > a{
+	width:35%;
+	display:block;
+}
+.design > div, .Publishing > div{
+	width:50%;
+	display:block;
+}
+.pofol_img{
+	position:relative;
+}
+.view{
+	position:absolute;
+	top:calc(50% - 40px);
+	left:calc(50% - 73px);
+	color:#fff;
+	font-size:40px;
+	font-family:sc5;
+	line-height:80px;
+}
+.magnifier{
+	width:80px; height:80px;
+	border-radius:40px;
+	background:#17a2b8 url(../img/icon/icon.png) no-repeat center;
+	display:block;
+	position:absolute;
+	top:calc(50% - 40px);
+	left:calc(50% - 40px);
+	opacity:0;
+}
+
+
+#Contact {
+	color:#fff;
+	height:600px;
+	padding-top:60px;
+}
+#Contact  .wrap  h3{
+	font-size:4rem;
+	font-family:sc5;
+	color:rgba(255,255,255,0.9);
+	padding:60px 0;
+	width:100%;
+	text-align:center;
+}
+#Contact  .wrap > p{
+	font-size:1.3rem;
+	font-family:sc3;
+	padding:60px 0;
+	width:100%;
+	text-align:center;
+}
+#Contact  .wrap ul {
+	text-align:center;;
+}
+#Contact  .wrap  a{
+	color:#17a2b8;
+	padding:20px 0;
+	font-size:1.2rem;
+}
+
+#Contact  ul li a {
+	display:block;
+}
+
+
+
+

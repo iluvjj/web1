@@ -1,0 +1,185 @@
+﻿@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+li {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+img { vertical-align:top;}
+body {
+	color:#666;
+	font-size:14px;
+	font-family: 'Nanum Gothic', serif;
+	line-height:1.8;
+}
+.wrap {
+	width:1100px;
+	margin:0 auto;
+	position:relative;
+}
+h2{
+	width:0; height:0;
+	display:hidden;
+	overflow:hidden;
+}
+.cfixed:after, .wrap:after, .s_wrap:after{
+	display:block;
+	clear:both;
+	content:'';
+	width:0; height:0;
+	visibility:hidden;
+}
+.f_storng {
+	font-weight:bold;
+}
+
+
+
+/*해더*/
+#header {position:relative;}
+#header #logo { 
+	text-align:center;
+	padding:20px 0;
+}
+/*해더 안 gnb*/
+
+#gnb .m_menu {
+	float:left;
+	width:220px; height:50px;
+	text-align:center;
+	background:#1d4199;
+	line-height:50px;
+	z-index:9999;
+}
+#gnb .m_menu:hover {
+	background:#37466c;
+}
+#gnb .m_menu > a > span {
+	color:#f1f1f1;
+	font-weight:bold;
+	font-size:1.2em;
+}
+/*가려진부분*/
+#gnb .m_menu .sub_menu{
+	display:none;
+}
+#gnb .m_menu .sub_menu>li{
+	width:220px; height:50px;
+	background:#37466c;
+	z-index:9966;
+}
+#gnb .m_menu .sub_menu>li>a {
+	text-align:center;
+	color:#f1f1f1;
+	font-weight:bold;
+	font-size:1.2em;
+}
+
+/**/
+#s_wrap {
+	width:99.81818181818182%;
+	max-width:100%;
+	border:1px solid #ccc;
+	position:relative;
+}
+
+/*서브네비게이션*/
+#snb{ 
+	width:200px;
+	display:block;
+	text-align:center; 
+}
+#snb_sub_menu{
+	position:absolute;
+	left:0; top:0;
+	width:200px; 
+	max-width:100%;
+}
+#snb_sub_menu li {
+	width:200px; 
+	max-width:100%;
+}
+#snb_sub_menu li a {
+	width:200px;
+	height:50px;  
+	max-width:100%;
+	display:block;
+	line-height:50px;
+	color:#333;
+	font-size:1.2em;
+	border-bottom:1px solid #ccc;
+
+}
+#snb_sub_menu li a:hover {
+	color:#f1f1f1;
+	font-size:1.2em;
+	font-weight:bold;
+	background:#333;
+	border-bottom:1px solid #ccc;
+}
+
+/*인사말부분..음.. box로 바꿀수도.*/
+#Greeting{
+	float:right;
+	width:81.72727272727273%;
+	padding:1.5% 5%;
+	border-left:1px solid #ccc;
+	box-sizing:border-box;
+}
+#Greeting > p:nth-of-type(1) {
+	font-size:1.4em;
+	padding:10px 0;
+	color:#37466c
+}
+#Greeting > p:nth-of-type(3) {
+	font-size:1.1em;
+	text-align:right;
+}
+#Greeting > ul {
+	padding:30px 0;
+}
+#Greeting > ul > li { 
+	padding:5px 0;
+}
+#Greeting > ul > li > span {
+	width:100px;
+	display:inline-block;
+}
+
+
+
+
+/*footer*/
+#footer {
+	border:1px solid #ccc;
+	border-top:none;
+	background:#ddd;
+	text-align:center;
+	padding:20px;
+}
+#footer address {
+	font-style:normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
