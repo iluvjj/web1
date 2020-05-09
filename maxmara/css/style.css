@@ -1,0 +1,236 @@
+@charset "utf-8";
+@import "reset.css";
+*{box-sizing:border-box;}
+/*a링크 스타일*/
+a:link{text-decoration:none; color:#000;}
+a:visited{text-decoration:none; color:#333;}
+a:hover{text-decoration:none; color:#333;}
+a:active{text-decoration:none; color:#333;}
+
+/*버튼스타일*/
+.blasc_btn{
+	width:200px;
+	height:35px;
+	line-height:35px;
+	background-color:#000;
+	color:#fff;
+	font-size:11pt;
+	text-align:center;
+	cursor:pointer;
+}
+.white_btn{
+	width:200px;
+	height:35px;
+	line-height:35px;
+	background-color:#fff;
+	color:#000;
+	font-size:11pt;
+	text-align:center;
+	cursor:pointer;
+	line-height:35px;
+	border:1px solid #000;
+}
+/*레이아웃 css*/
+#container{
+	width:90%;
+	max-width:1430px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+
+/*헤더영역 CSS*/
+header{
+	height:auto;
+	padding:10px;
+	display:flex;
+	flex-flow: row wrap;
+	/*
+		(행)가로기준 으로
+		flex-direction : 플랙스 방향지정
+		- row : 가로를 주축으로 배치
+		- column : 세로를 주축으로 배치
+		flex-wrap : 플랙스 항목을 한줄 또는 여러줄로 배치 할때 씀 
+		- nowrap : 기본값. 플랙스 항목들을 한줄에만 표시 
+		- wrap : 픅랙스 항목들을 여러줄에 걸쳐 표시 
+		flex-flow 는 위두개를 한꺼번에 쓸때 사용.
+	*/
+	justify-content:space-around;
+	/*
+		x(주축,가로축,행)를 중심으로 배치방법을 지정 x축 시작은 왼쪽에서 끝은 오른쪽으로
+		flex-start (왼쪽으로 정렬)
+		flex-end(오른쪽으로 정렬)
+		center(중앙정렬)
+		space-around (여백 포함 양쪽 정렬)
+		space-between(여백미포함 양쪽정렬)
+	*/
+	align-items:center;
+	/*
+		교차축 (y축, 세로, 열)
+		center 세로기준 중앙에 배치
+		flex-start (위쪽으로 정렬)
+		flex-end(아래쪽으로 정렬)
+		center(중앙정렬)
+		space-around (여백 포함 양쪽 정렬)
+		space-between(여백미포함 양쪽정렬)
+	*/
+}
+header>h1{
+	float:left
+}
+/* gnb 영역 CSS*/
+.gnb, .util_icon{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content:center;
+}
+.gnb a{
+	display:block;
+	font-weight:bold;
+	line-height:87px;
+	padding:0 30px;
+	
+}
+
+.util_icon a{
+	padding:0 10px;
+	
+}
+.util_icon img{
+	width:20px;
+}
+
+/*비쥬얼 배너 영역*/
+#visual_banner{
+	width:100%;
+	height:auto;
+}
+#visual_banner img{
+	width:100%;	
+}
+
+/*컬렉션 영역*/
+#collection_sec{
+	width:100%;
+	padding-top:80px;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content:space-around;
+}
+.img_box{
+	width:760px;
+	height:438px;
+	margin-bottom:80px;
+	border:1px solid #ccc;
+}
+.img_box:first-child{
+	/*
+		background-image:url('../images/img01.jpg');
+		background-repeat:
+		background-position:center;
+		bac-size
+	*/
+	background:url('../images/img01.jpg') no-repeat center/cover ;
+}
+.img_box:last-child{
+	background:url('../images/img02.jpg') no-repeat center/cover ;
+}
+.text_box{
+	width:430px;
+	padding-top:60px;
+	margin-bottom:80px;
+}
+.text_box p:first-child{
+	font-size:3rem;
+}
+.text_box p:nth-child(2){
+	font-size:1.2rem;
+	color:#666;
+	margin:10px 0; 
+}
+.text_box p:nth-child(3){
+	color:#ccc;
+	line-height:2.5em;
+}
+/*배너색션*/
+#banner_sec{
+	width:100%;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	margin-bottom:100px;
+}
+.small_banner{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	margin-bottom:100px;
+}
+.small_banner figure {margin:0 30px;}
+.small_banner figure figcaption{font-weight:bold;}
+.large_banner {
+	width:100%; height:320px;
+	background:url('../images/img05.jpg') no-repeat center/contain;
+}
+/*쇼 비하인드 영역*/
+#scenes_sec{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-bottom:100px;
+}
+#scenes_sec img {
+	width:50%;
+}
+.g_title{
+	width:100%;
+	height:80px;
+	line-height:80px;
+	text-align:center;
+	font-size:1.5rem;
+	background:#000;
+	color:#fff;
+}
+/*푸터영역 CSS*/
+footer{
+	height:auto;
+	padding:40px 50px;
+	background-color:#c1c1c1;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+.f_info{
+	margin:0 20px;
+}
+.info_title{
+	color:#000;
+	font-weight:bold;
+	padding:10px 0;
+}
+.f_info li a {
+	padding:10px;
+	line-height:30px;
+}
+.f_info:last-child{
+	width:480px;
+}
+.f_info:last-child>li:nth-child(1){
+	font-size:2rem;
+	margin:25px 0;
+}
+.f_info:last-child>li:nth-child(2){
+	color:#666;
+	margin:25px 0;
+}
+
+/*카피라이터*/
+#copy_sec{
+	width:100%; height:60px;
+	background-color:#000;
+	color:#fff;
+	text-align:center;
+	line-height:60px;
+}
