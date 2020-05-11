@@ -1,0 +1,15 @@
+/*네비게이션 고정*/
+$(window).on('scroll', function(){
+    var y = $(this).scrollTop();
+    if (y == 0){
+      $("nav.gnb").css({
+      "display" : "fixed",
+      "top" : 50
+      });
+   } else{
+      $("nav.gnb").css({
+      "display" : "fixed",
+      "top" : 0
+   });
+   }
+});

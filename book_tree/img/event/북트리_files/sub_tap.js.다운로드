@@ -1,0 +1,21 @@
+$(document).ready(function(){
+	
+	$(function() {
+			$('ul.tab li').click(function() {
+				var activeTab = $(this).attr('data-tab');
+				$('ul.tab li').removeClass('current');
+				$('.tabcontent').removeClass('current');
+				$(this).addClass('current');
+				$('#' + activeTab).addClass('current');
+			})
+		});
+	
+	$(function() {
+			$('.pagination a').click(function() {
+				var activeTab = $(this).attr('href');
+				$('.pagination a').removeClass('numsel');
+				$(this).addClass('numsel');
+			})
+		});
+	
+});
